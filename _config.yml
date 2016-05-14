@@ -26,5 +26,5 @@ gems:             ['jekyll-paginate', 'jekyll-gist']
 version:          0.0.1
 env:              production  # develop # 
 
-github:           https://github.com/toien
-  repo:           https://github.com/toien/hyde
+github:           
+  repo:           https://github.com/toien/toien.github.io
