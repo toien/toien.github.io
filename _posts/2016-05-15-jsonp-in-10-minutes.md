@@ -1,14 +1,20 @@
 ---
 layout: post
 title: 10 分钟掌握 JSONP
+excerpt_separator: <!-- more -->
 ---
 
 
-跨域请求一直困扰着不少开发者，随着业务的复杂成都提升，不免会与外部系统产生调用，常规的做法可以是在前端 JSONP 调用，或者让同域的服务端做接口代理。其实想想，两者都需要服务端支持，不是么？
+跨域请求一直困扰着不少开发者，随着业务的复杂成都提升，不免会与外部系统产生调用，常规的做法可以是在前端 JSONP 调用，或者让同域的服务端做接口代理。
 
+其实想想，两者都需要服务端支持，不是么？
+
+<!-- more -->
 ### JSONP：JSON with Padding.
 
-为啥叫 padding，想想 css 中的 padding，JSONP 不也就是把真正的数据放在一个带 padding 的 box 中么。
+为啥叫 padding？ 浏览器发送 JSONP 请求时会 padding 上一个 callback 函数的名字，服务端接受这个 callback 并将数据 padding 到其中。
+
+想想 css 中的 padding，JSONP 不也就是把真正的数据放在一个带 padding 的 box 中么。
 
 ### 原理
 
@@ -18,10 +24,10 @@ title: 10 分钟掌握 JSONP
 
 ### JSONP 的限制
 
-JSONP 并不是多么高端的黑魔法，请把它当成一个 `<script>` 标签和浏览器端的 `evalue` 调用，所以它的限制也是如此明显：
+JSONP 并不是多么高端的黑魔法，请把它当成一个 `<script>` 标签和浏览器端的 `eval` 调用，所以它的限制也是如此明显：
 
 1. 只允许 GET 请求
-2. 要求存在一个全局函数供 `evalue` 调用，否则即使请求成功，浏览器也会认为调用出现异常。
+2. 要求存在一个全局函数供 `eval` 调用，否则即使请求成功，浏览器也会认为调用出现异常。
 
 ### 最小化 JSONP 的限制
 
@@ -31,7 +37,7 @@ JSONP 并不是多么高端的黑魔法，请把它当成一个 `<script>` 标�
 
 2. 试想如果你页面上的 JSONP 请求会有很多很多，那么你为此准备的 JS 全局函数是不是也会有很多很多。
     
-    解决方式是使用一个什么都不做的 noop function， 然后使用 jQuery Deferred Object 属性，通过 `.done` 的方式来处理各种 JSONP 请求
+    解决方式是使用一个什么都不做的 `noop function`， 然后使用 jQuery Deferred Object 属性，通过 `.done` 的方式来处理各种 JSONP 请求
 
 ### 是时候看代码了
 
@@ -59,7 +65,7 @@ function getJsonP2() {
 }
 {% endhighlight %}
 
-如果同域的请求任然使用 JSONP 作为 dataType 会如何呢？
+如果同域的请求任然使用 JSONP 作为 `dataType` 会如何呢？
 
 #### 服务端 Spring MVC：
 
@@ -98,5 +104,5 @@ public String hello2(@RequestParam String callback,
 
 ### 参考资料
 
-* [说说JSON和JSONP，也许你会豁然开朗，含jQuery用例](http://www.cnblogs.com/dowinning/archive/2012/04/19/json-jsonp-jquery.html)
 * [JSONP](https://zh.wikipedia.org/wiki/JSONP)
+* [说说JSON和JSONP，也许你会豁然开朗，含jQuery用例](http://www.cnblogs.com/dowinning/archive/2012/04/19/json-jsonp-jquery.html)
