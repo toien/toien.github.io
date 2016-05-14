@@ -4,6 +4,7 @@ highlighter:      rouge #
 
 # Build 
 exclude:          ["node_modules", "package.json", "gulpfile.js"]
+future:           true
 
 # Permalinks
 permalink:        pretty # /posts/:title
