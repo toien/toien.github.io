@@ -3,7 +3,7 @@ markdown:         redcarpet
 highlighter:      rouge # 
 
 # Build 
-exclude:          ["node_modules", "package.json", "gulpfile.js"]
+exclude:          ["node_modules", "package.json", "gulpfile.js", "README.md", "LICENSE.md"]
 future:           true
 
 # Permalinks
