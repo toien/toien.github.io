@@ -32,7 +32,7 @@
  */
 
 html {
-  font-family: "PT Sans", Helvetica, "Microsoft Yahei", "STHeiti Light",  Arial, sans-serif;
+  font-family: "Microsoft Yahei", "STHeiti Light", Helvetica, Arial, sans-serif;
   font-size: 16px;
 }
 
@@ -75,6 +75,12 @@ html {
   margin-top: 0;
   font-family: "Abril Fatface", serif;
   font-size: 3.25rem;
+}
+
+.sidebar .lead {
+  font-size: 1.1rem;
+  font-weight: 900;
+  font-family: "Abril Fatface", serif;
 }
 
 /* Sidebar nav */
