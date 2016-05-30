@@ -36,6 +36,11 @@ html {
   font-size: 16px;
 }
 
+figure {
+  -webkit-margin-start: 1px;
+  -webkit-margin-end: 1px;
+}
+
 /*
  * Sidebar
  *
@@ -120,8 +125,8 @@ a.sidebar-nav-item:focus {
  * Align the contents of the site above the proper threshold with some margin-fu
  * with a 25%-wide `.sidebar`.
  */
-
 .content {
+  max-width: 45rem;
   padding-top:    4rem;
   padding-bottom: 4rem;
 }
@@ -136,6 +141,7 @@ a.sidebar-nav-item:focus {
 
 @media (min-width: 74em) {
   .content {
+    max-width: 58rem;
     margin-left: 22rem;
     margin-right: 4rem;
   }
