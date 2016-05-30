@@ -300,7 +300,7 @@ public class Cat extends Animal implements Serializable {
 
 打开之前生成的 .ser 文件，以 User 为例：
 
-> 
+![](http://img0.ph.126.net/wmyFxtynKDNApkjMjwNLnQ==/6631550451303117339.png)
 
 不难看到所有的 non-static 和 non-transient 的 field 通通都参与了进来，如文档所说，是 Object Graph 转换为字节流的过程。
 
