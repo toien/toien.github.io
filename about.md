@@ -19,6 +19,8 @@ title: About
 <div class="message resume">
   <img src="http://neitui123-data.stor.sinaapp.com/neitui/photo/75460/photo_resume.png" />
   <dl>
+    <dt>姓<span></span>名</dt>
+    <dd>刘书奂</dd><br>
     <dt>目前状态</dt>
     <dd>Java &amp; JS 开发@上海</dd><br>
     <dt>邮<span></span>箱</dt>
@@ -79,6 +81,10 @@ title: About
     <li>SuperPutty + Eclipse + Sublime 进行日常开发工作</li>
     <li>采用 Maven 编译和依赖管理</li>
     <li>使用 Git 做版本控制</li>
+  </ul>
+  <h3>教育经历</h3>
+  <ul>
+    <li>2009 - 2013: 本科 上海电力学院 计算机科学与技术</li>
   </ul>
   <h3>光阴荏苒</h3>
   <p>在大学里照着网上的视频边学边写，毕业后走上了开发之路。</p>
