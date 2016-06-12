@@ -19,8 +19,6 @@ title: About
 <div class="message resume">
   <img src="http://neitui123-data.stor.sinaapp.com/neitui/photo/75460/photo_resume.png" />
   <dl>
-    <dt>姓<span></span>名</dt>
-    <dd>刘书奂</dd><br>
     <dt>目前状态</dt>
     <dd>Java &amp; JS 开发@上海</dd><br>
     <dt>邮<span></span>箱</dt>
