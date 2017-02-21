@@ -98,7 +98,7 @@ public String hello2(@RequestParam String callback,
 
 前端已经可以顺利得到服务端返回的 JSONP 数据了，就像 ajax 请求一样
 
-![](http://img0.ph.126.net/p9yz0DVMj9c98ltgNhX_eA==/6598112103741552831.png)
+![](http://imglf2.nosdn.127.net/img/MWszODNLQmVTNUlwb3RUSm9XUFhCeWZxN3hXV0RPUE5YNlJla1dzMEN6T1A5a1kzQS9WbnFnPT0.png)
 
 <br>
 
