@@ -15,6 +15,10 @@ _site
 *.vi
 *~
 
+# Drafts
+_drafts
+
+
 # OS or Editor folders
 .DS_Store
 ._*

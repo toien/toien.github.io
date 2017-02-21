@@ -147,6 +147,15 @@ abbr[title] {
   border-bottom: 1px dotted #e5e5e5;
 }
 
+/* Images */
+img.portrait {
+  max-width: 20rem;
+}
+
+img.landscape {
+  max-width: 48rem;
+}
+
 /* Code */
 code,
 pre {
@@ -162,15 +171,10 @@ code {
 pre {
   display: block;
   margin-top: 0;
-  margin-bottom: 1rem;
+  margin-bottom: 0;
   padding: 1rem;
   font-size: .8rem;
   line-height: 1.4;
-  white-space: pre;
-  white-space: pre-wrap;
-  word-break: break-all;
-  word-wrap: break-word;
-  background-color: #f9f9f9;
 }
 pre code {
   padding: 0;
@@ -180,12 +184,15 @@ pre code {
 }
 
 /* Pygments via Jekyll */
-.highlight {
-  margin-bottom: 1rem;
-  border-radius: 4px;
+.highlighter-rouge {
+  max-width: 48rem;
+  overflow-x: auto;
 }
-.highlight pre {
-  margin-bottom: 0;
+.highlight {
+  border-radius: 4px;
+  max-width: 48rem;
+  overflow-x: auto;
+  background-color: #f9f9f9;
 }
 
 /* Gist via GitHub Pages */
