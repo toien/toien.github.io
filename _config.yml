@@ -17,7 +17,7 @@ title:            Kwritin
 tagline:          'A coder blog'
 description:      'Stay thinking, stay seeking.'
 url:              http://toien.github.io
-baseurl:          /
+# baseurl:          /
 author:
   name:           'toien.L'
   url:            https://twitter.com/mdo
@@ -27,7 +27,7 @@ gems:             ['jekyll-paginate', 'jekyll-gist']
 
 # Custom vars
 version:          0.0.1
-env:              production # develop # 
+env:              production # develop  
 
 github:           
   repo:           https://github.com/toien/toien.github.io
