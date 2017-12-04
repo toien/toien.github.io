@@ -8,8 +8,10 @@ excerpt_separator: <!-- more -->
 
 工具虽然简单好用，可是传输的时候避免不了文件（传输内容）到外网上走一圈的问题。
 
-作为一个开发人员，电脑上一定安装了 git bash，so 我们也可以依赖 git bash 提供的 sshd 命令行工具实现在 windows 是上提供 sshd 服务。
+作为一个开发人员，电脑上一定安装了 git bash，so 我们也可以依赖 git bash 提供的 sshd 命令行工具实现在 windows 是上提供 sshd 服务，通过 scp、wall 等方式实现内容传输。
+
 <!-- more -->
+
 考虑到 git 安装时版本的问题，先尝试切换到 git 的安装目录，确保已经安装了 sshd 等工具
 
     cmdr> cd "D:\Program Files\Git\usr\bin\
