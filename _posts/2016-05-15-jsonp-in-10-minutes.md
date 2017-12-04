@@ -98,7 +98,7 @@ public String hello2(@RequestParam String callback,
 
 前端已经可以顺利得到服务端返回的 JSONP 数据了，就像 ajax 请求一样
 
-![](http://imglf2.nosdn.127.net/img/MWszODNLQmVTNUlwb3RUSm9XUFhCeWZxN3hXV0RPUE5YNlJla1dzMEN6T1A5a1kzQS9WbnFnPT0.png)
+![](/public/img/posts/get-jsonp-in-chrome.png)
 
 <br>
 
@@ -106,3 +106,5 @@ public String hello2(@RequestParam String callback,
 
 * [JSONP](https://zh.wikipedia.org/wiki/JSONP)
 * [说说JSON和JSONP，也许你会豁然开朗，含jQuery用例](http://www.cnblogs.com/dowinning/archive/2012/04/19/json-jsonp-jquery.html)
+
+`<<<EOF`
