@@ -4,11 +4,10 @@ title: 为移动端 Web 构建全屏体验
 excerpt_separator: <!-- more -->
 ---
 
-
-[Origin Address](https://developers.google.com/web/fundamentals/native-hardware/fullscreen/)
-
 我们能很容易地制作具有带入感的全屏体验的网站或者应用，正如和 Web 相关的一切事物，我们有好几种途径来实现。
 特别是现在越来越多的浏览器支持 “已安装” 的方式全屏启动。
+
+[原文链接](https://developers.google.com/web/fundamentals/native-hardware/fullscreen/)
 <!-- more -->
 
 ## 1. 让你的 App 全屏显示
