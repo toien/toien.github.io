@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 在 windows 上提供 ssh 服务
+title: 在 Windows 上提供 ssh 服务
 excerpt_separator: <!-- more -->
 ---
 
@@ -51,15 +51,16 @@ excerpt_separator: <!-- more -->
 
 启动成功后可以在任务管理器里看到
 
-![](/public/img/posts/sshd-started.png)
+<p class="text-center">
+  <img src="/public/img/posts/sshd-started.png">
+</p>
 
 #### 让你的 sshd 更快一点
 
 修改 sshd_config 里配置如下
     
-    # GSSAPI options
     GSSAPIAuthentication yes
-    # GSSAPIDelegateCredentials no
+    GSSAPIDelegateCredentials no
     UseDNS no
 
 `<<<EOF`

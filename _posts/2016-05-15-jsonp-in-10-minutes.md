@@ -98,7 +98,9 @@ public String hello2(@RequestParam String callback,
 
 前端已经可以顺利得到服务端返回的 JSONP 数据了，就像 ajax 请求一样
 
-![](/public/img/posts/get-jsonp-in-chrome.png)
+<p class="text-center">
+  <img src="/public/img/posts/get-jsonp-in-chrome.png">
+</p>
 
 <br>
 

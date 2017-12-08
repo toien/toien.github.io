@@ -156,6 +156,15 @@ a.sidebar-nav-item:focus {
   }
 }
 
+/** ui-class */
+.text-center {
+  text-align: center;
+}
+
+.text-center img {
+  margin-left: auto;
+  margin-right: auto;
+}
 
 /*
  * Reverse layout

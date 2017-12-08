@@ -1,10 +1,10 @@
 ---
 layout: post
-title: 在 centos 上配置 samba 服务
+title: 在 Centos 上配置 Samba 服务
 excerpt_separator: <!-- more -->
 ---
 
-如何在 centos 上快速安装，配置 samba 服务，启用匿名模式以快速使用。
+如何在 Centos 上快速安装，配置 Samba 服务，启用匿名模式以快速使用。
 <!-- more -->
 
 本机环境: CentOS Linux release 7.3.1611 (Core)
