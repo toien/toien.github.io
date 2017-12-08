@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 搜索引擎如何工作
+title: 用户如何使用搜索引擎
 excerpt_separator: <!-- more -->
 ---
 
