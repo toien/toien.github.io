@@ -4,9 +4,7 @@ title: Git 简明教程
 excerpt_separator: <!-- more -->
 ---
 
-
 可能是最简单明了的 Git 入门帮助，搬运自: [罗杰·杜德勒的博客](http://rogerdudler.github.io/git-guide/index.zh.html)
-
 <!-- more -->
 
 ### 创建新仓库

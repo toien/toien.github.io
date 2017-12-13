@@ -4,8 +4,8 @@ title: Java Serializable 继承
 excerpt_separator: <!-- more -->
 ---
 
-
-让我们来看一个稍微复杂一点的的场景。在实际开发的过程中， extends 和 implements 都是比较常见的，那么 Serialization 的表现又如何呢？
+让我们来看一个稍微复杂一点的的场景。
+在实际开发的过程中， `extends` 和 `implements` 都是比较常见的，那么 Serialization 的表现又如何呢？
 <!-- more -->
 
 ### AdvancedUser
