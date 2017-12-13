@@ -4,8 +4,11 @@ title: Java Serializable 定制
 excerpt_separator: <!-- more -->
 ---
 
-
-接着 [上文](/2016/05/29/java-serializable-basics/) 说到的变更问题，如果 User 在后来的某一个时间又发生了改变，比如你认为把 age 属性改为 birthday 更科学。但是由于之前的版本已经在线上运行了一段时间，磁盘上的所有 .ser 文件中并没有保存 birthday 而是 age 那么代码修改之后，虽然用 serialVersionUID 向前兼容了，但是通过 Java 默认的 readObject 并不能将 age 转换为 birthday ，so 让我们定制一下吧。
+接着 [上文](/2016/05/29/java-serializable-basics/) 说到的变更问题。
+如果 User 在后来的某一个时间又发生了改变，比如你认为把 age 属性改为 birthday 更科学。
+但是由于之前的版本已经在线上运行了一段时间，磁盘上的所有 .ser 文件中并没有保存 birthday 而是 age，
+那么代码修改之后，虽然用 serialVersionUID 向前兼容了，
+但是通过 Java 默认的 readObject 并不能将 age 转换为 birthday ，so 让我们定制一下吧。
 <!-- more -->
 
 ### writeObject && readObject

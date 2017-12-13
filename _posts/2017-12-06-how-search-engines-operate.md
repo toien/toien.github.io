@@ -1,16 +1,15 @@
 ---
 layout: post
-title: 搜索引擎如何工作
+title: SEO 入门指南-Ch1:搜索引擎如何工作
 excerpt_separator: <!-- more -->
 ---
 
-SEO 入门指南—第一节：搜索引擎如何工作
+SEO 入门指南-Ch1:搜索引擎如何工作
 
 [原文链接](https://moz.com/beginners-guide-to-seo/how-search-engines-operate)
 
-<!-- more -->
-
 搜索引擎有两个主要的功能：爬取数据并构建索引，返回给搜索的用户一个经过相关性排序的网站列表。
+<!-- more -->
 
 ### 1. 爬取并创建索引
 
