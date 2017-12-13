@@ -252,9 +252,11 @@ nofollow 链接的权重值为 0，并被转换为 HTML 文本（就像链接不
 
 #### 6.1 小心长度
 
-搜索引擎在搜索结果页面只展现 `title` 标签最开始的 65-75 个字符 (15 个汉字)，之后的内容用省略号代替。
+搜索引擎在搜索结果页面只展现 `title` 标签最开始的 65-75 <sup><a name="footer-1" href="#title-length">1</a></sup> 个字符，之后的内容用省略号代替。
 这同样是一个在社交媒体网站上较为普通的限制。坚持这些限制是明智之举。
 然而，如果你定位多个关键词(或者是定位一个特别长的关键词短语)，让它们保持在 `title` 标签中对于排名来说必要的，建议你使用较长的 `title`。
+
+
 
 #### 6.2 将重要的关键词放置在页面前部
 
@@ -334,7 +336,7 @@ meta robots 可以以页面为单位来控制搜索引擎的爬取（对大多�
 是搜索营销中重要的一部分。
 用重要的关键字（注意 Google 如何呈现 `description`）精心撰写一段可读的，引人注目的描述文字，可以帮助你吸引到更多的用户。
 
-`meta description` 可以有人以长短，但是搜索引擎通常会截断在 160 个字符 (30 个汉字) 以内，所以最好把长度控制在这之内。
+`meta description` 可以有人以长短，但是搜索引擎通常会截断在 160 <sup><a name="footer-2" href="#description-length">2</a></sup> 个字符以内，所以最好把长度控制在这之内。
 
 如果缺少 `meta description`，搜索引擎会从页面元素上截取一段作为它来使用。对于那些目标多个关键词的页面来说，这是一种非常有效的策略。
 
@@ -527,5 +529,10 @@ URL ——文档在互联网上的地址—— 对搜索引擎来说具有很高
 你可以使用法律手段，比如 DMCA 来强制他删除内容。
 Moz 的 CEO 在[保护线上内容不被偷窃的专题](https://moz.com/blog/four-ways-to-enforce-your-copyright-what-to-do-when-your-online-content-is-being-stolen)
 上提供了一些中肯的建议。
+
+### 12 脚注
+
+- <a name="title-length" href="#footer-1">1</a>: 发稿时测试：Google、百度 支持的 title 长度在 30 个汉字。
+- <a name="description-length" href="#footer-2">2</a>: 发稿时测试：Google 支持的 description 长度在 30 个汉字，不包括图片；百度支持 15 个汉字，但是包括图片。
 
 `<<<EOF`
