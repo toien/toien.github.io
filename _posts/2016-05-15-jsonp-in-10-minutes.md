@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 10 分钟掌握 JSONP
+tags: JSONP HTTP Java jQuery
 excerpt_separator: <!-- more -->
 ---
 

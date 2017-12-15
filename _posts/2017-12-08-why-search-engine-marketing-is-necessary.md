@@ -1,6 +1,7 @@
 ---
 layout: post
 title: SEO 入门指南-Ch3:为什么 SEO 有必要
+tags: SEO 搜索引擎 营销
 excerpt_separator: <!-- more -->
 ---
 
