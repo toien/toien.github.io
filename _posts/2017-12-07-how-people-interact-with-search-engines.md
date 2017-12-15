@@ -1,6 +1,7 @@
 ---
 layout: post
 title: SEO 入门指南-Ch2:用户如何使用搜索引擎
+tags: SEO 搜索引擎 用户交互
 excerpt_separator: <!-- more -->
 ---
 
