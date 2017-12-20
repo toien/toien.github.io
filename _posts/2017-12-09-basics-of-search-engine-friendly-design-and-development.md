@@ -485,21 +485,25 @@ URL ——文档在互联网上的地址—— 对搜索引擎来说具有很高
 
 比如你想要在博客里宣布开一个 SEO 的研讨议。正常的 HTML 代码可能如下：
 
-    <div>
-      SEO Conference<br/>
-      Learn about SEO from experts in the field.<br/>
-      Event date:<br/>
-      May 8, 7:30pm
-    </div>
+{% highlight html %}
+<div>
+  SEO Conference<br/>
+  Learn about SEO from experts in the field.<br/>
+  Event date:<br/>
+  May 8, 7:30pm
+</div>
+{% endhighlight %}
 
 现在，通过结构化数据，你可以告诉搜索引擎更多关于数据类型的信息。结果可能看起来像下面这样：
 
-    <div itemscope itemtype="http://schema.org/Event">
-    <div itemprop="name">SEO Conference</div> 
-      <span itemprop="description">Learn about SEO from experts in the field.</span> 
-      Event date: 
-      <time itemprop="startDate" datetime="2012-05-08T19:30">May 8, 7:30pm</time> 
-    </div>
+{% highlight html %}
+<div itemscope itemtype="http://schema.org/Event">
+<div itemprop="name">SEO Conference</div> 
+  <span itemprop="description">Learn about SEO from experts in the field.</span> 
+  Event date: 
+  <time itemprop="startDate" datetime="2012-05-08T19:30">May 8, 7:30pm</time> 
+</div>
+{% endhighlight %}
 
 ### 11. 保护站点荣誉
 
@@ -516,11 +520,15 @@ URL ——文档在互联网上的地址—— 对搜索引擎来说具有很高
 所以包含指向你自己网站的链接，指明你自己发布的问杂货那个，可以保证搜索引擎看到这些回链（说明你的资源可能是最原始的）。
 为了达成这个目标，需要使用绝对链接，而不是相对链接。这样的链接：
 
-    <a href="../">Home</a>
+{% highlight html %}
+<a href="../">Home</a>
+{% endhighlight %}
 
 需要被替换成：
 
-    <a href="https://moz.com">Home</a>
+{% highlight html %}
+<a href="https://moz.com">Home</a>
+{% endhighlight %}
 
 这样，采集者截取你的内容，但是链接仍然指向你的站点。
 
