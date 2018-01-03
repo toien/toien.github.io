@@ -12,6 +12,7 @@ excerpt_separator: <!-- more -->
 其实想想，两者都需要服务端支持，不是么？
 
 <!-- more -->
+
 ### JSONP：JSON with Padding.
 
 为啥叫 padding？ 浏览器发送 JSONP 请求时会 padding 上一个 callback 函数的名字，服务端接受这个 callback 并将数据 padding 到其中。
