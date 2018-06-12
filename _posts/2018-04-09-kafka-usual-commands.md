@@ -1,10 +1,15 @@
 ---
 layout: post
 title: Kafka usual commands
-tags: kafka
+tags: kafka shell scripts
+excerpt_separator: <!-- more -->
 ---
 
-My version: kafka_2.11-1.0.1
+Kafka usual commands for manipulating topics and consumers.
+
+Run at version: kafka_2.11-1.0.1
+
+<!-- more -->
 
 ### Topics:
 
@@ -17,7 +22,7 @@ List all topics:
 
 ##### To delete specific topic:
 
-First, Add one line to server.properties file under config folder:
+First, Add one line to `server.properties` file under config folder:
 
     delete.topic.enable=true
 
@@ -25,11 +30,10 @@ then, you can run this command:
 
     bin/kafka-topics.sh --zookeeper localhost:2181 --delete --topic test
 
-Manually deletion will takes more time althogh shell has returned, its usually a few minutes base 
-on the topic data size.After delete, list all topic to check out is a good habit.
+Manually deletion will takes more time althogh shell has returned, its usually a few minutes base on the topic data size. 
+After delete, list all topic to check out is a good habit.
 
-Infomation from `kafka-topics.sh` is very limited, we will get more valuable info from 
-`kafka-consumer-gropus.sh`.
+Infomation from `kafka-topics.sh` is very limited, we will get more valuable info from `kafka-consumer-gropus.sh`.
 
 ### Consumers:
 
@@ -54,8 +58,7 @@ By now, we can only see one group detail at a time, maybe a `--all-groups` optio
     kafka-consumer-groups.bat --bootstrap-server kafka-host:9092 --group my-group --all-topics 
     --reset-offsets --to-earliest --execute
 
-By default, `--reset-offsets` just prints the result of the operation. To actually perform the 
-operation you need to add `--execute` to your command.
+By default, `--reset-offsets` just prints the result of the operation. To actually perform the operation you need to add `--execute` to your command.
 
 #### Clear all data
 
