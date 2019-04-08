@@ -1,7 +1,7 @@
 ---
 layout: post
 title: SEO 入门指南-Ch7:持续增长的热度和链接
-tags: SEO 搜索引擎 社交 外链
+tags: seo
 excerpt_separator: <!-- more -->
 ---
 

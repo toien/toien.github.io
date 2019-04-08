@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 为移动端 Web 构建全屏体验
-tags: WEB前端 WEB移动端 用户体验 全屏
+tags: 前端 移动端 用户体验 全屏
 excerpt_separator: <!-- more -->
 ---
 

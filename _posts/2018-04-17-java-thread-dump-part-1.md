@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Java 线程转储 - Part 1
+title: Java 线程转储(thread dump) - Part 1
 tags: java thread jdk-tool
 excerpt_separator: <!-- more -->
 ---
@@ -19,7 +19,7 @@ excerpt_separator: <!-- more -->
 
 <!-- more -->
 
-第二部分我们通过以下几个方面剖析、翻译线程转储
+第二部分我们通过以下几个方面剖析、解读线程转储
 
 1. 理解线程状态
 1. 分析转储的最佳实践
@@ -100,7 +100,7 @@ excerpt_separator: <!-- more -->
 
     "VM Periodic Task Thread" prio=10 tid=0x00a6fc90 nid=0x830 waiting on condition
 
-正如它名字一样，线程转储是 JVM 中所有的线程转储。它包含应用线程和 JVM  特殊线程的当前执行状态。以上的 dump 记录片段展现 2 个应用线程：`Thread-0` 和 `Thread-1`，JVM 特殊线程诸如："Signal Dispatcher", "Finalizer"
+正如它名字一样，线程转储是 JVM 中所有的线程转储。它包含应用线程和 JVM  特殊线程的当前执行状态。以上的 dump 记录片段展现 2 个应用线程：`Thread-0` 和 `Thread-1`，JVM 特殊线程诸如：`Signal Dispatcher`, `Finalizer`
 
 线程 dump 在以下几个场景非常有用：
 
@@ -118,8 +118,7 @@ Sun 和其它厂商也会告知用户这些变化。
 但不变的是包含在 dump 文件中的信息级别。
 正如提到的，dump 文件是 JVM 状态的快照，它列出所有关于应用和系统级别的线程和锁的状态。
 
-<pre><code>
-<span style="color:blue;">Full thread dump</span> Java HotSpot(TM) Client VM (1.5.0_04-b05 mixed mode, sharing):
+<pre class="highlight"><code><span style="color:blue;">Full thread dump</span> Java HotSpot(TM) Client VM (1.5.0_04-b05 mixed mode, sharing):
 
 <span style="color:blue;">"Thread-1"</span> prio=5 tid=0x00a995d0 nid=0x1300 in <span style="color:blue;">Object.wait()</span> [0x02d0f000..0x02d0fb68]
 at java.lang.Object.wait(Native Method)
@@ -155,7 +154,28 @@ at java.lang.Thread.run(Unknown Source)
 
 在 Unix／Linux 环境，可以通过 `kill -QUIT <jvm pid>` 命令或者 `kill -3 <jvm pid>` 命令。线程 dump 文件通常输出到 stderr (标准错误流)
 
-根据你的启动命令不同，dump 文件可能会出现在其它日志文件中。
+笔者更推荐使用 JDK 工具来 dump：
+
+    ~ jstack --help
+    Usage:
+        jstack [-l] <pid>
+            (to connect to running process)
+        jstack -F [-m] [-l] <pid>
+            (to connect to a hung process)
+        jstack [-m] [-l] <executable> <core>
+            (to connect to a core file)
+        jstack [-m] [-l] [server_id@]<remote server IP or hostname>
+            (to connect to a remote debug server)
+
+    Options:
+        -F  to force a thread dump. Use when jstack <pid> does not respond (process is hung)
+        -m  to print both java and native frames (mixed mode)
+        -l  long listing. Prints additional information about locks
+        -h or -help to print this help message
+
+可以看到 jstack 除了可以连接到进程，还可以对应到模块 (core file)。
+
+根据你的 JVM 启动命令不同，dump 文件可能会出现在其它日志文件中。
 请咨询下你的系统管理员，无论使用那种 dump 方式，都不会导致应用停止，JVM 导出线程执行状态并且继续运行。
 
 虽然概率很低，但是 JVM 也会因为偶然某个线程的 dump 而导致 JVM 崩溃。
@@ -166,6 +186,6 @@ at java.lang.Thread.run(Unknown Source)
 在这部分，我们快速地过了一遍线程、dump 文件格式以及我们如何 dump。有趣的事情才刚刚开始。
 接下来，我们将理解线程的状态，如何解释 dump 文件。
 
-[去下一节](//toien.github.io/)。
+[去下一节]({% post_url 2018-04-17-java-thread-dump-part-2 %})。
 
 `<<<EOF`

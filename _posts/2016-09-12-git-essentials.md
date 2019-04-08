@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Git 简明教程
-tags: Git 版本控制 快速入门
+tags: 版本控制 git
 excerpt_separator: <!-- more -->
 ---
 

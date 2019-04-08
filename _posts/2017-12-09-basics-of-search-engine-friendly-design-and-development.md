@@ -1,7 +1,7 @@
 ---
 layout: post
 title: SEO 入门指南-Ch4:搜索引擎友好的设计和开发
-tags: SEO 搜索引擎 开发 技术实践
+tags: seo
 excerpt_separator: <!-- more -->
 ---
 

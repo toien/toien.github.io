@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Java Serializable 定制
-tags: Java Serialize 序列化
+tags: java serialize 序列化
 excerpt_separator: <!-- more -->
 ---
 
