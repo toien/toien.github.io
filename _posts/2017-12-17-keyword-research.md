@@ -1,7 +1,7 @@
 ---
 layout: post
 title: SEO 入门指南-Ch5:关键词调查
-tags: SEO 搜索引擎
+tags: seo
 excerpt_separator: <!-- more -->
 ---
 

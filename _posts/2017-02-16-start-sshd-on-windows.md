@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 在 Windows 上提供 SSH 服务
-tags: Windows SSH 内容传输
+tags: windows ssh
 excerpt_separator: <!-- more -->
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Kafka usual commands
-tags: kafka shell scripts
+tags: kafka
 excerpt_separator: <!-- more -->
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: SEO 入门指南-Ch6:可用性,用户体验,内容怎样影响搜索引擎排名
-tags: SEO 搜索引擎
+tags: seo
 excerpt_separator: <!-- more -->
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: SEO 入门指南-Ch1:搜索引擎如何工作
-tags: SEO 搜索引擎 原理
+tags: seo
 excerpt_separator: <!-- more -->
 ---
 

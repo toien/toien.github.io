@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 前端工作心得
-tags: WEB前端 经验分享
+tags: 前端 经验 吐槽
 excerpt_separator: <!-- more -->
 ---
 

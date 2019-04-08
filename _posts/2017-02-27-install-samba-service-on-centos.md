@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 在 CentOS 上配置 Samba 服务
-tags: Samba CentOS 文件服务
+tags: samba centos 文件服务
 excerpt_separator: <!-- more -->
 ---
 
