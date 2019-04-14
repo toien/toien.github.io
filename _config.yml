@@ -22,7 +22,7 @@ author:
   name:           'toien.L'
   url:            https://twitter.com/mdo
 
-paginate:         5
+paginate:         6
 plugins:          ['jekyll-paginate', 'jekyll-gist']
 
 # Custom vars
