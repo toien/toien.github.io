@@ -7,12 +7,13 @@ excerpt_separator: <!-- more -->
 
 SEO 入门指南-Ch4:搜索引擎友好的设计和开发
 
-[原文链接](https://moz.com/beginners-guide-to-seo/basics-of-search-engine-friendly-design-and-development)
-
 搜索引擎在如何爬取并翻译信息这方面有些局限。
 同一个网页，在不同的搜索引擎里看起来可能是不一样的。
 在这一节，我们将重点讨论如何构建对搜索引擎和真实用户一致的网页的技术细节。
+
 <!-- more -->
+
+[原文链接](https://moz.com/beginners-guide-to-seo/basics-of-search-engine-friendly-design-and-development)
 
 `TL. DR. `
 

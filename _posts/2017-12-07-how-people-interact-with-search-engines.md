@@ -7,11 +7,12 @@ excerpt_separator: <!-- more -->
 
 SEO 入门指南-Ch2:用户如何使用搜索引擎
 
-[原文链接](https://moz.com/beginners-guide-to-seo/how-people-interact-with-search-engines)
-
 在围绕 SEO 构建营销策略的时候，首要考虑的是如何与你的潜在用户产生共鸣。
 当你一旦找到营销的方向，就可以更有效率地触达、维系你的用户。
+
 <!-- more -->
+
+[原文链接](https://moz.com/beginners-guide-to-seo/how-people-interact-with-search-engines)
 
 <p class="text-center">
   <img src="//dc8hdnsmzapvm.cloudfront.net/assets/images/beginners/robot-evolution.png" alt="">

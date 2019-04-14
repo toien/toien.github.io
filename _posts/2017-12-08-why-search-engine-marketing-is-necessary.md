@@ -7,12 +7,13 @@ excerpt_separator: <!-- more -->
 
 SEO 入门指南-Ch3:为什么 SEO 有必要
 
-[原文链接](https://moz.com/beginners-guide-to-seo/why-search-engine-marketing-is-necessary)
-
 SEO 一个很重要的原因是能够让你的网站无论是对用户还是对搜索引擎都很容易理解。
 虽然搜索引擎已经成长了很多，但它们还是不能完全像人一样理解网页。
 SEO 帮助搜引擎理解每个页面的内容主题，以及它怎么为用户所用。
+
 <!-- more -->
+
+[原文链接](https://moz.com/beginners-guide-to-seo/why-search-engine-marketing-is-necessary)
 
 #### 一个关于 SEO 的常见的分歧
 

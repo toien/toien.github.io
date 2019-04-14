@@ -7,8 +7,6 @@ excerpt_separator: <!-- more -->
 
 SEO 入门指南-Ch6:可用性,用户体验,内容怎样影响搜索引擎排名
 
-[原文链接](https://moz.com/beginners-guide-to-seo/how-usability-experience-and-content-affect-search-engine-rankings)
-
 搜索引擎一直在努力通过提供最佳的搜索结果来提升用户体验。
 虽然 “最佳” 是一种主观因素，但搜索引擎对于能够满足用户的页面和站点有很好的认识：
 
@@ -21,6 +19,8 @@ SEO 入门指南-Ch6:可用性,用户体验,内容怎样影响搜索引擎排名
 为了解码这些信息并排名，除了 `meta` 标签，它还依赖人们如何和网站页面交互等信息，这将提供给它网站内容质量的线索。
 
 <!-- more -->
+
+[原文链接](https://moz.com/beginners-guide-to-seo/how-usability-experience-and-content-affect-search-engine-rankings)
 
 ### 1. 可用性和用户体验
 
