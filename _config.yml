@@ -15,12 +15,12 @@ permalink:        pretty # /posts/:title
 # Setup
 title:            Kwritin
 tagline:          'A coder blog'
-description:      'Stay thinking, stay seeking.'
-url:              http://toien.github.io
+description:      'Good good study, day day up.'
+url:              https://toien.github.io
 # baseurl:          /
 author:
   name:           'toien.L'
-  url:            https://twitter.com/mdo
+  url:            https://github.com/toien
 
 paginate:         6
 plugins:          ['jekyll-paginate', 'jekyll-gist']
