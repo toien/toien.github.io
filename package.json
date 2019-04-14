@@ -1,4 +1,12 @@
 {
+  "name": "toien.github.io",
+  "version": "0.0.1",
+  "description": "A jekyll application",
+  "author": "toien",
+  "private": true,
+  "scripts": {
+    "css": "gulp css"
+  },
   "devDependencies": {
     "del": "^2.2.0",
     "gulp": "^3.9.1",

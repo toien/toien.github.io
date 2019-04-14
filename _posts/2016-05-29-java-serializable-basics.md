@@ -7,6 +7,7 @@ excerpt_separator: <!-- more -->
 
 Java 程序运行的过程中，所有的对象都在内存中，一旦程序重启之后，对象将全部丢失。
 常见的持久化策略有：XML，JSON，数据库，还有 Java 自带的序列化。
+
 <!-- more -->
 
 ### Serializable Interface

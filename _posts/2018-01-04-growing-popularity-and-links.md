@@ -7,8 +7,6 @@ excerpt_separator: <!-- more -->
 
 SEO 入门指南-Ch7:持续增长的热度和链接
 
-[原文链接](https://moz.com/beginners-guide-to-seo/growing-popularity-and-links)
-
 对于爬取海量页面的搜索引擎来说，链接是页面之间的通道。
 通过复杂的链接分析，搜索引擎可以发现页面之间是如何关联，又是以什么方式关联的。
 
@@ -16,6 +14,8 @@ SEO 入门指南-Ch7:持续增长的热度和链接
 搜索引擎已经在链接数据的使用上达到精进，并使用复杂的算法，基于这些信息对网站和页面进行细致的评估。
 
 <!-- more -->
+
+[原文链接](https://moz.com/beginners-guide-to-seo/growing-popularity-and-links)
 
 链接并非 SEO 的全部，但是搜索专家把搜索算法的一大部分归因于链接相关因子（[参考搜索排名因子](https://moz.com/search-ranking-factors)）。通过链接，引擎不仅可以根据链接到网页的页面的数量和流行度来分析流行网站和页面，还可以分析信任，垃圾邮件和权威等指标。
 

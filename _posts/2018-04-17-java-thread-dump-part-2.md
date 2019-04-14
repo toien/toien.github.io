@@ -5,8 +5,6 @@ tags: java thread jdk-tool
 excerpt_separator: <!-- more -->
 ---
 
-[原文链接](https://sites.google.com/site/threaddumps/java-thread-dumps-2)
-
 第二部分我们通过以下几个方面剖析、解读线程转储
 
 1. 理解线程状态
@@ -15,6 +13,8 @@ excerpt_separator: <!-- more -->
 1. 参考资料
 
 <!-- more -->
+
+[原文链接](https://sites.google.com/site/threaddumps/java-thread-dumps-2)
 
 # Part II 理解线程状态
 

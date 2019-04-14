@@ -7,8 +7,6 @@ excerpt_separator: <!-- more -->
 
 SEO 入门指南-Ch5:关键词调查
 
-[原文链接](https://moz.com/beginners-guide-to-seo/keyword-research)
-
 一切都源于搜索框里输入的词语。
 
 在搜索营销领域，关键词调查是最重要、最有价值、回报最高的进行事项之一。
@@ -21,6 +19,8 @@ SEO 不仅仅是让你的网站有更多的访问者，更是让你接触到正�
 在市场营销的历史中，从来没有如此低的门槛来理解消费者的动机。
 
 <!-- more -->
+
+[原文链接](https://moz.com/beginners-guide-to-seo/keyword-research)
 
 ### 1. 如何判断一个关键词的价值
 

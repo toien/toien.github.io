@@ -4,8 +4,6 @@ title: Java 线程转储(thread dump) - Part 1
 tags: java thread jdk-tool
 excerpt_separator: <!-- more -->
 ---
-
-[原文链接](https://sites.google.com/site/threaddumps/java-thread-dumps)
  
 通过这篇文章我们将理解 Java 线程转储(dump)，以及它们如何成为理解、解决常见问题的利器。
 文章将会分成两个部分。
@@ -18,6 +16,8 @@ excerpt_separator: <!-- more -->
 1. 如何转储
 
 <!-- more -->
+
+[原文链接](https://sites.google.com/site/threaddumps/java-thread-dumps)
 
 第二部分我们通过以下几个方面剖析、解读线程转储
 
