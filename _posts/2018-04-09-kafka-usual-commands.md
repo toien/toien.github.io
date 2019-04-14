@@ -55,8 +55,9 @@ By now, we can only see one group detail at a time, maybe a `--all-groups` optio
 
 ##### To reset offsets:
 
-    kafka-consumer-groups.bat --bootstrap-server kafka-host:9092 --group my-group --all-topics 
-    --reset-offsets --to-earliest --execute
+    kafka-consumer-groups.bat --bootstrap-server kafka-host:9092 \
+                              --group my-group --all-topics \
+                              --reset-offsets --to-earliest --execute
 
 By default, `--reset-offsets` just prints the result of the operation. To actually perform the operation you need to add `--execute` to your command.
 
