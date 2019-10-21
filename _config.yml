@@ -23,7 +23,7 @@ author:
   url:            https://github.com/toien
 
 paginate:         6
-plugins:          ['jekyll-paginate', 'jekyll-gist']
+plugins:          ['jekyll-paginate']
 
 # Custom vars
 version:          0.0.1
