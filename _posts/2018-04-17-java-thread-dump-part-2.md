@@ -16,7 +16,7 @@ excerpt_separator: <!-- more -->
 
 [原文链接](https://sites.google.com/site/threaddumps/java-thread-dumps-2)
 
-# Part II 理解线程状态
+## Part II 理解线程状态
 
 在开始剖析线程转储(dump)之前，我们必须好好地理解线程的基本状态。
 
@@ -60,7 +60,7 @@ excerpt_separator: <!-- more -->
 这就是理解线程 dump 的核心概念。
 在接下来的章节，我们会拓展到如何剖析大量线程的 dump 数据，得出结论，并且消除不正常的线程。
 
-## 分析线程转储
+### 分析线程转储
 
 如果我们已经很好地理解线程的状态后，剖析线程会更容易。
 对生产环境下的应用做线程转储可能会产生大量数据。
@@ -191,7 +191,7 @@ excerpt_separator: <!-- more -->
         at java.lang.Thread.run(Thread.java:595)
     </code></pre>
 
-## 分析一些竞态条件
+### 分析一些竞态条件
 
 让我们用已有的知识来分析竞态条件
 
@@ -199,7 +199,7 @@ excerpt_separator: <!-- more -->
 2. 线程耗尽
 3. 资源占用
 
-### 经典死锁
+#### 经典死锁
 
 当线程由于请求一些被其它 `BLOCKED` 线程占有的资源时，就会发生死锁。
 两个以上的线程，如果出现多个互相依赖的资源就可能出现死锁。
@@ -468,7 +468,7 @@ Found 1 deadlock.</code></pre>
     at java.lang.Thread.run(Unknown Source)
 </code></pre>
 
-## 小结
+### 小结
 
 - 线程 dump 是对 JVM 状态的快照。它揭示了所有线程和锁的状态。
 - 线程 dump 对应用状态可视化有很高的价值，并且帮助快速定位问题。

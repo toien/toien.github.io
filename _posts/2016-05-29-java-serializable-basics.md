@@ -10,13 +10,13 @@ Java 程序运行的过程中，所有的对象都在内存中，一旦程序重
 
 <!-- more -->
 
-### Serializable Interface
+## Serializable Interface
 
 想要使用这个 built-in 特性，必须在类声明的时候 `implements Serializable` 接口。这是一个标记接口，不用实现任何具体的方法，只是为了告诉 JVM ：这个类你可以帮我序列化。如果尝试序列化一个没有声明该接口的类，会抛出 `java.io.NotSerializableException` 异常。
 
 另外，实现了该接口之后，可以声明一个序列化版本 ID 用来控制序列化向前兼容，在后面详细讨论。
 
-### 基本使用
+## 基本使用
 
 User.java
 
@@ -84,7 +84,7 @@ public class User implements Serializable {
 }
 {% endhighlight %}
 
-### 向前兼容
+## 向前兼容
 
 试想：如果有一天，你发现用户只有这些属性还不够，比如需要增加一个 gender 属性表示用户的性别。所以你增加了如下 gender 属性，并且修改 `deserialize` 方法，在反化时一并设置：
 

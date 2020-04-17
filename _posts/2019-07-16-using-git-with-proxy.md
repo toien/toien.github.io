@@ -21,7 +21,7 @@ ssh 协议:
     
     git@github.com:owner/git.git
 
-### 为 http 协议设置代理
+## 为 http 协议设置代理
 
     git config --global http.proxy "http://127.0.0.1:8080"
     git config --global https.proxy "http://127.0.0.1:8080"
@@ -34,7 +34,7 @@ ssh 协议:
     git config --global --unset http.proxy
     git config --global --unset https.proxy
 
-### 为 ssh 协议设置代理
+## 为 ssh 协议设置代理
 
 修改 `~/.ssh/config` 文件（不存在则新建）：
 
@@ -46,13 +46,13 @@ ssh 协议:
        # 走 socks5 代理（如 Shadowsocks）
        # ProxyCommand nc -v -x 127.0.0.1:1080 %h %p
 
-### 补充
+## 补充
 
 我们用 git 服务大多数使用需求是: github 需要挂代理，而其它代码托管服务(比如公司的 gitlab )则不用。
 
 可以看到 ssh 可以通过 Host/HostName 方便地限定了需要走代理的 domain。http 协议同样可以。
 
-### 小结
+## 小结
 
 综上所述，我们需要设置 github 的 git 服务挂上代理，可以通过如下配置:
 
@@ -68,7 +68,7 @@ ssh 协议:
            User git
            ProxyCommand nc -v -x 127.0.0.1:1086 %h %p
 
-### 参考
+## 参考
 
 - [Only use a proxy for certain git urls/domains? - Stack Overflow](https://stackoverflow.com/questions/16067534/only-use-a-proxy-for-certain-git-urls-domains/18712501#18712501)
 

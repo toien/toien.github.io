@@ -91,7 +91,8 @@ wait-set 还没有发挥作用。
 
 保障合作性同时需要 entry-set 和 wait-set。
 
-#### 资料
+### 资料
+
 - [Java 1.5 concurrency guide](https://docs.oracle.com/javase/1.5.0/docs/guide/concurrency/overview.html)
 - [Difference between lock and monitor – Java Concurrency](https://howtodoinjava.com/java/multi-threading/multithreading-difference-between-lock-and-monitor/)
 - [Java version history](https://en.wikipedia.org/wiki/Java_version_history)

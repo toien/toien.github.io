@@ -12,7 +12,7 @@ excerpt_separator: <!-- more -->
 
 <!-- more -->
 
-### 基本选项
+## 基本选项
 
 tcpdump 可以捕捉指定网卡的流量，在控制台输出，保存到文件；还可以不监听，直接解析文件内容并输出。
 
@@ -42,7 +42,7 @@ tcpdump [ -c count ]
 - `-A`: 以 ASCII 形式打印每个 packet 的数据，非常适用于 web 调试
 - `-X`: 以 hex 和 ASCII 形式打印每个 packet，适用于调试新的协议
 
-### 输出格式
+## 输出格式
 
 来看看 tcpdump 如何工作，比如我们想通过它来抓取本地访问 www.baidu.com 的数据。
 
@@ -127,9 +127,7 @@ tcpdump 'port 80 and host www.baidu.com'
 2. F.
 3. .
 
-
-
-### 表达式
+## 表达式
 
 这是 tcpdump 的黑魔法。
 
@@ -139,7 +137,7 @@ tcpdump 用表达式过滤 packet，只输出表达式为 true 的 packet。
 
 有三种不同类型的修饰符: type, dir 以及 proto.
 
-#### type 修饰符
+### type 修饰符
 
 type 修饰符指定 id 所代表的对象类型, id 可以是名字也可以是数字. 
 
@@ -153,7 +151,7 @@ host 表明 id 表示主机, net 表明 id 是网络, port 表明 id 是端口�
 
 如果不指定 type 修饰符, id 默认的修饰符为 host.
 
-#### dir 修饰符
+### dir 修饰符
 
 dir 修饰符描述 id 所对应的传输方向, 即发往 id 还是从 id 接收（而 id 到底指什么需要看其前面的 type 修饰符）.
 可取的方向为: src, dst, src 或 dst, src 并且 dst. 如: 
@@ -164,7 +162,7 @@ dir 修饰符描述 id 所对应的传输方向, 即发往 id 还是从 id 接�
 
 如果不指定 dir 修饰符, id 默认的修饰符为 src 或 dst. 
 
-#### proto 修饰符
+### proto 修饰符
 
 proto 修饰符描述 id 所属的协议. 可选的协议有: ether, fddi, tr, wlan, ip, ip6, arp, rarp, decnet, tcp 以及 upd.
 
@@ -203,7 +201,7 @@ proto 修饰符描述 id 所属的协议. 可选的协议有: ether, fddi, tr, w
 
 借助括号以及操作符, 可把表达元组合在一起使用 (由于括号是 shell 的特殊字符, 所以在 shell 脚本或终端中使用时必须对括号进行转义, 即'(' 与')'需要分别表达成'\(' 与 '\)').
 
-#### 操作符:
+### 操作符:
 
 1. 否定操作 (`!' 或 `not')
 1. 与操作(`&&' 或 `and')
@@ -223,7 +221,7 @@ proto 修饰符描述 id 所属的协议. 可选的协议有: ether, fddi, tr, w
 通常, 如果表达式中包含元字符(如正则表达式中的 '*', '.' 以及 shell 中的 '('等字符)，最好还是使用单独字符串的方式传入. 
 这时, 整个表达式需要被单引号括起来, 作为一个字符串被解析。
 
-### 常用 tcpdump 的表达元
+## 常用 tcpdump 的表达元
 
 - `dst host [host]`
 
@@ -329,7 +327,7 @@ proto 修饰符描述 id 所属的协议. 可选的协议有: ether, fddi, tr, w
 
     如果数据包是以太网广播数据包, 则与此对应的条件表达式为真. ether 关键字是可选的.
 
-### 表达式进阶 - HTTP 示例
+## 表达式进阶 - HTTP 示例
 
 1. To monitor HTTP traffic including request and response headers and message body:
 
@@ -357,7 +355,7 @@ tcpdump -A -s 0 'tcp port 80 and (((ip[2:2] - ((ip[0]&0xf)<<2)) - ((tcp[12]&0xf0
 tcpdump -i lo
     ```
 
-### _REF
+## _REF
 
 - [Wireshark Charater Filter Generator](https://www.wireshark.org/tools/string-cf.html)
 - [Use TCPDUMP to Monitor HTTP Traffic](https://sites.google.com/site/jimmyxu101/testing/use-tcpdump-to-monitor-http-traffic)

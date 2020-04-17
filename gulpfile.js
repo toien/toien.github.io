@@ -14,3 +14,6 @@ gulp.task('css', function() {
 	del(['public/dist/*', '!public/dist/*.min.css']);
 	return result;
 });
+
+gulp.task('js', function() {
+});

@@ -17,7 +17,7 @@ SEO 入门指南-Ch4:搜索引擎友好的设计和开发
 
 `TL. DR. `
 
-### 1. 可被索引的内容
+## 1. 可被索引的内容
 
 为了在更多的搜索引擎里表现良好，网页最重要的内容应该以 `html` 文本的格式出现。
 图片，Flash 文件， Java Applet 等其他非文本的内容通常会被搜索引擎的爬虫忽略。
@@ -29,7 +29,7 @@ SEO 入门指南-Ch4:搜索引擎友好的设计和开发
 - 为 Flash 或者 Java 插件填充文本。
 - 为 `video`，`audio` 标签提供一份冗余脚本便于被搜索引擎索引。
 
-#### 1.1 以搜索引擎的视角审视你的网站
+### 1.1 以搜索引擎的视角审视你的网站
 
 很多网站在被索引内容上存在重要的问题，多次检查值得做。
 使用像 Google Cache, [SEO-browser.com](http://www.seo-browser.com/) 还有 [MozBar](https://moz.com/mozbar/) 
@@ -40,7 +40,7 @@ SEO 入门指南-Ch4:搜索引擎友好的设计和开发
   <img src="https://dc8hdnsmzapvm.cloudfront.net/assets/images/beginners/panda-comparison.png?cf6a1d0">
 </p>
 
-#### 1.2 哇，那是我们看上去的样子吗
+### 1.2 哇，那是我们看上去的样子吗
 
 使用 Google 缓存的特性，我们看到对搜索引擎来说，JugglingPandas.com 的首页并不包含所有我们看到的富媒体内容。
 这就让搜索引擎很难解析它的相关性。
@@ -49,7 +49,7 @@ SEO 入门指南-Ch4:搜索引擎友好的设计和开发
   <img src="https://dc8hdnsmzapvm.cloudfront.net/assets/images/beginners/monkey-comparison.png?eb39f01">
 </p>
 
-#### 1.3 嘿，有趣的内容去哪了
+### 1.3 嘿，有趣的内容去哪了
 
 通过 Google 缓存，我们看到这个页面几乎是一片荒芜。
 甚至没有文本告诉我们这个页面包含 Axe Battling Monkeys。
@@ -58,7 +58,7 @@ SEO 入门指南-Ch4:搜索引擎友好的设计和开发
 
 使用 SEO 工具来反复检查页面上的文本内容对搜索引擎的可见性是明智之举。这同样适用于图片、链接。
 
-### 2. 可被爬取的链接结构
+## 2. 可被爬取的链接结构
 
 搜索引擎需要看到页面的内容才能将它们解析到海量的基于关键字的索引中去，同理，它们也需要知道链接来首先找到内容。
 可被爬取的[链接结构](https://moz.com/researchtools/ose/)——拥有让爬虫可以浏览网站的路径——对找到网站的所有页面至关重要。
@@ -75,7 +75,7 @@ SEO 入门指南-Ch4:搜索引擎友好的设计和开发
 这是因为没有直接的，可被爬取的链接指向 C 和 D。从 Google 的角度上说，它们并不存在。
 优质的内容，良好的关键词定位，聪明的营销，但如果爬虫在一开始就无法触达你的页面，这些东西不会有任何效果。
 
-#### 2.1 解剖链接
+### 2.1 解剖链接
 
 <p class="text-center">
   <img src="https://dc8hdnsmzapvm.cloudfront.net/assets/images/beginners/link-anatomy.png?2d4d4b4">
@@ -93,7 +93,7 @@ SEO 入门指南-Ch4:搜索引擎友好的设计和开发
 爬虫可以将这个链接添加到搜索引擎的链接网络中。
 用于计算，与搜索查询无关的的变量（比如 Google 的 PageRank 方法），根据他来创建被链接页面的索引。
 
-#### 2.2 页面不可访问的其他原因
+### 2.2 页面不可访问的其他原因
 
 - **需要提交的表单**
   如果你需要用户完成一个在线表单才能访问具体的的内容，搜索引擎根本没有机会看到这些被保护的页面。
@@ -122,11 +122,11 @@ SEO 入门指南-Ch4:搜索引擎友好的设计和开发
 
 如果你能避免这些陷阱，你将会有一个清晰，可被爬取的 HTML 链接，能让爬虫非常容易地访问你的内容页面。
 
-### 3. `rel="nofollow"`
+## 3. `rel="nofollow"`
 
 `rel="nofollow"` 可以用在以下几种语法中：
 
-#### 3.1 `<a href="https://moz.com" rel="nofollow">Lousy Punks!</a>`
+### 3.1 `<a href="https://moz.com" rel="nofollow">Lousy Punks!</a>`
 
 链接有很多属性。但搜索引擎几乎忽视所有，有一个重要的 `rel="nofollow"` 属性例外。
 上面的例子，添加了 `rel="nofollow"` 的链接告诉搜索引擎，网站的站长不想这个链接被搜索引擎解释成目标页面的宣传。
@@ -136,13 +136,13 @@ SEO 入门指南-Ch4:搜索引擎友好的设计和开发
 但是已经演变成一种告诉搜索引擎区别需要被忽略的链接的方式。
 被标记为 nofollow 的链接在不同的搜索引擎里的表现会稍微有点不太一样，但是它们肯定没有正常的链接权重高。
 
-#### 3.2 nofollow 链接不好吗？
+### 3.2 nofollow 链接不好吗？
 
 虽然他们没有正常连接的权重高，`nofollow` 链接是链接多样化里正常的一部分。
 一个有很多链接指向的网站会积累很多 `nofollow` 链接，但这不是一件坏事。
 事实上，Moz 的[排名因子](https://moz.com/search-ranking-factors)展示了高排名的网站更倾向于有高比例的入站 `nofollow` 链接。
 
-#### 3.3 Google
+### 3.3 Google
 
 Google [表示在大部分情况下](http://support.google.com/webmasters/bin/answer.py?hl=en&answer=96569)，
 他们不会跟踪 nofollow 链接，这些链接也不会影响 PageRank 中锚文本的值。
@@ -150,13 +150,13 @@ Google [表示在大部分情况下](http://support.google.com/webmasters/bin/an
 nofollow 链接的权重值为 0，并被转换为 HTML 文本（就像链接不存在一样）。
 尽管如此，许多站长相信即使 nofollow 链接来自一个高权威的网站，比如 Wikipedia 能被当成一种信任度的标识。
 
-#### 3.4 Bing & Yahoo!
+### 3.4 Bing & Yahoo!
 
 必应，向雅虎提供搜索结果的厂商，也声明他们不会在链接网络中包含 nofollow 链接，
 虽然他们也用 nofollow 链接来当作发现新页面的一种方式。
 当他们追踪链接的时候，不会使用他们来计算排名。
 
-### 4. 关键词使用和定位
+## 4. 关键词使用和定位
 
 关键字是处理搜索的关键步骤。它们构成了查询和语言。
 事实上，所有信息提取的科学（包括基于 web 的搜索引擎 Google ）都是基于关键字。
@@ -169,7 +169,7 @@ nofollow 链接的权重值为 0，并被转换为 HTML 文本（就像链接不
   <img src="https://dc8hdnsmzapvm.cloudfront.net/assets/images/beginners/steps-diagram.png?610bdb7">
 </p>
 
-#### 4.1 关键字控制
+### 4.1 关键字控制
 
 关键字决定了我们如何传达搜索意图，如何与搜索引擎交互。
 当我们输入搜索的词汇时，搜索引擎根据我们输入的词汇来匹配网页。
@@ -186,7 +186,7 @@ nofollow 链接的权重值为 0，并被转换为 HTML 文本（就像链接不
   <img src="https://dc8hdnsmzapvm.cloudfront.net/assets/images/beginners/map.png?aaee860">
 </p>
 
-#### 4.2 关键词滥用
+### 4.2 关键词滥用
 
 自从搜索出现以来，人们在错误的指引下尝试滥用关键词来左右搜索引擎。
 包括在文本，URL，meta 标签，链接中堆砌关键词。
@@ -201,7 +201,7 @@ nofollow 链接的权重值为 0，并被转换为 HTML 文本（就像链接不
 
 使用关键字的意义不在于对所有的关键字排名靠前，而是当人们搜索你的站点有提供内容的时候能够排名靠前。
 
-#### 4.3 关键词密度神话
+### 4.3 关键词密度神话
 
 关键词密度不是现代排名算法的一部分，如同 Edel Garcia 博士发表的[没有意义的关键词密度](http://www.e-marketing-news.co.uk/Mar05/garcia.html)
 
@@ -226,7 +226,7 @@ nofollow 链接的权重值为 0，并被转换为 HTML 文本（就像链接不
 
 你可以从[这篇文章](https://moz.com/blog/perfecting-keyword-targeting-on-page-optimization)，获取更多的页面优化信息
 
-### 5. 页面优化
+## 5. 页面优化
 
 关键词使用和定位仍然是搜索引擎排名算法的一部分，我们可以在关键字使用上采用有效的技术来帮助创建良好优化的页面。
 在 Moz ，我们从事了很多测试并且得出一些[经验](https://moz.com/search-ranking-factors)。
@@ -245,33 +245,31 @@ nofollow 链接的权重值为 0，并被转换为 HTML 文本（就像链接不
   因为 meta description 会被搜索引擎作为摘要来描述页面。
 - 正常情况下，不要使用关键字作为锚文本链接到其他页面上，这种做法称为[关键字互食](https://moz.com/blog/how-to-solve-keyword-cannibalization)。
 
-### 6. `title` 标签
+## 6. `title` 标签
 
 一个页面的 `title` 元素必须要准确，精确描述页面的内容。这无论对于搜索引擎还是用户都很重要。
 
 因为 `title` 标签是 SEO 一个如此重要的部分，接下来关于 `title` 的最佳实践影响都不及它。
 下面的推荐做法包含为 SEO 和可用性的优化 title 标签的重要步骤。
 
-#### 6.1 小心长度
+### 6.1 小心长度
 
 搜索引擎在搜索结果页面只展现 `title` 标签最开始的 65-75 <sup><a name="footer-1" href="#title-length">1</a></sup> 个字符，之后的内容用省略号代替。
 这同样是一个在社交媒体网站上较为普通的限制。坚持这些限制是明智之举。
 然而，如果你定位多个关键词(或者是定位一个特别长的关键词短语)，让它们保持在 `title` 标签中对于排名来说必要的，建议你使用较长的 `title`。
 
-
-
-#### 6.2 将重要的关键词放置在页面前部
+### 6.2 将重要的关键词放置在页面前部
 
 `title` 中的关键词越靠前，他们对于排序来说就越有用，一个用户点击它的概率也越高。
 
-#### 6.3 包含商标
+### 6.3 包含商标
 
 在 Moz，我们热衷于在每个 `title` 标签加上商标，这有助于增加商标的知名度，
 并为喜欢或者熟悉我们的用户创造一个更高的点击通过率。
 有时候，把你的商标放在 `title` 的最左部是有意义的，比如在网站首页。
 虽然把词汇放在 `title` 的最左可以获得更高的权重，但是别忘了你是在为什么而排名。
 
-#### 6.4 考虑可读性和情感激励
+### 6.4 考虑可读性和情感激励
 
 `title` 标签应该具有描述性并且可读的。title 标签作为一个新用户的第一交互元素，应该传达正向的情感。
 构造一个引人入胜的 title 标签会帮助你抓住用户的注意力，吸引更多的用户来你的网站。
@@ -305,11 +303,11 @@ nofollow 链接的权重值为 0，并被转换为 HTML 文本（就像链接不
   </tr>
 </table>
 
-### 7. Meta 标签
+## 7. Meta 标签
 
 meta 标签一开始倾向于作为一个站点的内容代理来使用。几种基本的 meta 标签列举如下：
 
-#### 7.1 Meta Robots
+### 7.1 Meta Robots
 
 meta robots 可以以页面为单位来控制搜索引擎的爬取（对大多数引擎来说）。
 
@@ -328,7 +326,7 @@ meta robots 可以以页面为单位来控制搜索引擎的爬取（对大多�
 [X-Robots-Tag](http://code.google.com/web/controlcrawlindex/docs/robots_meta_tag.html) 是用来达成同样目的的 HTTP Header。
 它通常用在非 html 文件上达到相同的效果，比如图片文件。
 
-#### 7.2 Meta Description
+### 7.2 Meta Description
 
 [meta description](https://moz.com/learn/seo/meta-description) 用来简短地描述页面内容。
 搜索引擎不会使用在这个标签中的关键词和短语排序。
@@ -342,14 +340,14 @@ meta robots 可以以页面为单位来控制搜索引擎的爬取（对大多�
 
 如果缺少 `meta description`，搜索引擎会从页面元素上截取一段作为它来使用。对于那些目标多个关键词的页面来说，这是一种非常有效的策略。
 
-#### 7.3 不太重要的 meta 标签
+### 7.3 不太重要的 meta 标签
 
 `meta keywords`: 在 SEO 上，它不再像以前那么有价值。SearchEnginLand 发表的[文章](http://searchengineland.com/070905-194221.php)做了说明。
 
 `Meta Refresh`, `Meta Revisit-after`, `Meta Content-type` 还有其他标签，虽然这些标签对 SEO 有用，
 但是处理它们不太重要，我们会在 [Google Search Console 帮助](http://support.google.com/webmasters/bin/answer.py?hl=en&answer=79812) 里详细讨论。
 
-### 8. URL 结构
+## 8. URL 结构
 
 URL ——文档在互联网上的地址—— 对搜索引擎来说具有很高的价值。他们在多个重要的地方都会出现。
 
@@ -379,7 +377,7 @@ URL ——文档在互联网上的地址—— 对搜索引擎来说具有很高
   </tr>
 </table>
 
-#### 8.1 如何构建 URL
+### 8.1 如何构建 URL
 
 1. **使用同理心**
    把你自己当成用户，然后看看这个 URL 。
@@ -403,9 +401,9 @@ URL ——文档在互联网上的地址—— 对搜索引擎来说具有很高
 5. **使用中划线分割单词**
    并不是所有的 web 应用都能准确地翻译诸如 `_`，`+`，`%20` 这样的分隔符，所以我们用中划线来分隔单词。
 
-### 9. 标准化和内容重复
+## 9. 标准化和内容重复
 
-#### 9.1 引子
+### 9.1 引子
 
 [内容重复](https://moz.com/blog/duplicate-content-in-a-post-panda-world) 算得上是网站最让人苦恼的问题之一。
 在过去的几年里，搜索引擎降低重复页面的排名来减少搜索结果中出现重复的概率。
@@ -446,7 +444,7 @@ URL ——文档在互联网上的地址—— 对搜索引擎来说具有很高
 当多个竞争排名的页面结合成一个页面，它们不仅结束了互相竞争，并且创建一个全局上相关性更高，而且更热门的页面。
 这会正向地影响你在搜索引擎中的排名。
 
-#### 9.2 拯救者: canonical 标签
+### 9.2 拯救者: canonical 标签
 
 搜索引擎的另一个选择称为：[Canonical URL 标签](https://moz.com/learn/seo/canonicalization)，
 是另一种解决站内重复内容的方案。
@@ -454,7 +452,7 @@ URL ——文档在互联网上的地址—— 对搜索引擎来说具有很高
 
 在包含重复内容的页面上使用 `canonical` 标签。目标指向的就是你想要排名的页面。
 
-#### 9.3 内部工作
+### 9.3 内部工作
 
 `<link rel="canonical" href="https://moz.com/blog"/>`
 
@@ -466,7 +464,7 @@ URL ——文档在互联网上的地址—— 对搜索引擎来说具有很高
 
 更多关于重复内容的信息，请参考[Dr. Pete 的这篇文章](https://moz.com/blog/duplicate-content-in-a-post-panda-world)
 
-### 10. 富摘要
+## 10. 富摘要
 
 有注意到搜索引擎结果页上的 5 星等级吗？搜索引擎有几率会从网页上嵌入的富摘要获取这样的信息。
 富摘要是一种结构化的数据，允许站长通过搜索引擎的方式来标记内容。
@@ -482,7 +480,7 @@ URL ——文档在互联网上的地址—— 对搜索引擎来说具有很高
 [Google's Rich Snippet Testing Tool](http://www.google.com/webmasters/tools/richsnippets), 
 还有使用 [MozBar](https://moz.com/products/pro/seo-toolbar/).
 
-#### 10.1 示例
+### 10.1 示例
 
 比如你想要在博客里宣布开一个 SEO 的研讨议。正常的 HTML 代码可能如下：
 
@@ -506,9 +504,9 @@ URL ——文档在互联网上的地址—— 对搜索引擎来说具有很高
 </div>
 {% endhighlight %}
 
-### 11. 保护站点荣誉
+## 11. 保护站点荣誉
 
-#### 11.1 别人如何窃取你的排名
+### 11.1 别人如何窃取你的排名
 
 不幸的是，互联网上散落着不择手段地从别的站点拔内容，然后在自己的网站上再度使用（有时候以奇怪的修改方式）以达成自己业务的网站。
 这种从他站提取信息并在此发布的行为称为：采集。采集者在搜索引擎排名上做得很优秀，通常超过原站。
@@ -540,7 +538,7 @@ URL ——文档在互联网上的地址—— 对搜索引擎来说具有很高
 Moz 的 CEO 在[保护线上内容不被偷窃的专题](https://moz.com/blog/four-ways-to-enforce-your-copyright-what-to-do-when-your-online-content-is-being-stolen)
 上提供了一些中肯的建议。
 
-### 12 脚注
+## 12 脚注
 
 - <a name="title-length" href="#footer-1">1</a>: 发稿时测试：Google、百度 支持的 title 长度在 30 个汉字。
 - <a name="description-length" href="#footer-2">2</a>: 发稿时测试：Google 支持的 description 长度在 30 个汉字，不包括图片；百度支持 15 个汉字，但是包括图片。

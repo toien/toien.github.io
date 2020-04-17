@@ -10,7 +10,7 @@ excerpt_separator: <!-- more -->
 
 <!-- more -->
 
-### AdvancedUser
+## AdvancedUser
 
 我们构造一个高级用户，它将继承 [基础篇](/2016/05/29/java-serializable-basics/) 的 User 
 
@@ -74,7 +74,7 @@ public class AdvancedUser extends User {
 
 可以看出 Serializable 接口和其他接口无异，对子类同样有效。现在，我们来对换下角色，把 Serializable 交给子类来实现看看会发生什么。
 
-### DumbUser & NonDumbUser
+## DumbUser & NonDumbUser
 
 NonDumbUser.java
 
@@ -156,7 +156,7 @@ Oops，由于父类并没有实现 Serializable 接口，导致父类的数据�
 
 顺带一提，由于 serialVersionUID 是 private 的，所以每个子类都需要显示的声明各自的 versionUID 以保证兼容性。
 
-### readObjectNoData
+## readObjectNoData
 
 这个接口的使用，文档上描述得比较晦涩：
 
@@ -296,7 +296,7 @@ public class Cat extends Animal implements Serializable {
 
 我们在新版本的 Animal 中实现了这个方法，结果就是在当前这种数据丢失的情况下的反序列化过程中， Java 调用了它。导致你看到的 alive 值为 true。
 
-### summary
+## summary
 
 最后，让我们来看看序列化的真相：
 
@@ -340,7 +340,7 @@ public void defaultReadObject()
 
 <br>
 
-### 参考资料
+## 参考资料
 
 * [When to add readObjectNoData() during serialization](http://stackoverflow.com/questions/7445217/java-when-to-add-readobjectnodata-during-serialization)
 * [Java Object Serialization Specification: 3 - Object Input Classes](http://docs.oracle.com/javase/6/docs/platform/serialization/spec/input.html#6053)

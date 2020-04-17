@@ -12,7 +12,7 @@ excerpt_separator: <!-- more -->
 但是通过 Java 默认的 readObject 并不能将 age 转换为 birthday ，so 让我们定制一下吧。
 <!-- more -->
 
-### writeObject && readObject
+## writeObject && readObject
 
 如果希望由自己完成整个序列化，可以在类上声明该方法并实现
 
@@ -74,7 +74,7 @@ public class CustomizedUser implements Serializable {
 
 但是，自定义整个序列化方案并不能太好地兼容老的代码，Java 随之又提出了新的解决方式。
 
-### writeReplace && readResolve
+## writeReplace && readResolve
 
 也就是说，在序列化和反序列化的过程中增加一层。例如 Web 前端和服务端交互的数据结构往往是 Data Transfer Object（Value Object），而在这些 JSON 和数据库表之间，还有一层称为 Persistent Object 的对象存在。
 
@@ -147,7 +147,7 @@ UserSerializer 看起来使用比较奇怪，这是因为 readResolve 方法没�
 
 <br>
 
-### 参考资料
+## 参考资料
 
 * [java.io.Serializable](http://docs.oracle.com/javase/8/docs/api/java/io/Serializable.html)
 * [5 things you didn't know about ... Java Object Serialization](http://www.ibm.com/developerworks/library/j-5things1/)

@@ -10,15 +10,35 @@
     <div class="content container">
       {{ content }}
     </div>
-    {% if site.env == 'production' %}
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-111448485-1"></script>
+
+    <!-- global functions & vars -->
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-
       gtag('config', 'UA-111448485-1');
+
+      // used in post pages
+      function initToc() {
+        scrollnav.init(document.querySelector('.content .post'), {
+          sections: 'h2',
+          subSections: 'h3',
+          easingStyle: 'easeInOutCubic',
+        });
+      }
     </script>
+
+    {% if page.layout == 'post' %}
+      {% if site.env == 'production' %}
+        <script defer src="https://cdn.jsdelivr.net/npm/scrollnav@3.0.2/dist/scrollnav.min.umd.min.js" onload="initToc()"></script>
+      {% else %}
+        <script defer src="/public/js/lib/scrollnav/3.0.2/scrollnav.min.umd.js"></script>
+        <script defer src="/public/js/post.js"></script>
+      {% endif %}
+    {% endif %}
+    
+    {% if site.env == 'production' %}
+      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-111448485-1"></script>
     {% endif %}
   </body>
 </html>

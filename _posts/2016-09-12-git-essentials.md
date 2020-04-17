@@ -8,7 +8,7 @@ excerpt_separator: <!-- more -->
 可能是最简单明了的 Git 入门帮助，搬运自: [罗杰·杜德勒的博客](http://rogerdudler.github.io/git-guide/index.zh.html)
 <!-- more -->
 
-### 创建新仓库
+## 创建新仓库
 
 创建新文件夹，打开，然后执行 
 
@@ -16,7 +16,7 @@ excerpt_separator: <!-- more -->
 
 以创建新的 git 仓库。
 
-### 检出仓库
+## 检出仓库
 执行如下命令以创建一个本地仓库的克隆版本：
 
 	shell> git clone /path/to/repository 
@@ -25,13 +25,13 @@ excerpt_separator: <!-- more -->
 
 	shell> git clone username@host:/path/to/repository
 	
-### 工作流
+## 工作流
 
 你的本地仓库由 `git` 维护的三棵“树”组成。第一个是你的`工作目录`，它持有实际文件；第二个是`暂存区`（Index），它像个缓存区域，临时保存你的改动；最后是`HEAD`，它指向你最后一次提交的结果。
 
 ![working trees](http://rogerdudler.github.io/git-guide/img/trees.png)
 
-### 添加和提交
+## 添加和提交
 你可以提出更改（把它们添加到暂存区），使用如下命令：
 
 	shell> git add <filename>
@@ -43,7 +43,7 @@ excerpt_separator: <!-- more -->
 
 现在，你的改动已经提交到了`HEAD`，但是还没到你的远端仓库。
 
-### 推送改动
+## 推送改动
 你的改动现在已经在本地仓库的`HEAD` 中了。执行如下命令以将这些改动提交到远端仓库：
 	
 	shell> git push origin master
@@ -56,7 +56,7 @@ excerpt_separator: <!-- more -->
 
 如此你就能够将你的改动推送到所添加的服务器上去了。
 
-### 分支
+## 分支
 
 分支是用来将特性开发绝缘开来的。在你创建仓库的时候，`master`是“默认的”分支。在其他分支上进行开发，完成后再将它们合并到主分支上。
 
@@ -78,7 +78,7 @@ excerpt_separator: <!-- more -->
 	
 	shell> git push origin <branch>
 
-### 更新与合并
+## 更新与合并
 要更新你的本地仓库至最新改动，执行：
 
 	shell> git pull
@@ -99,7 +99,7 @@ excerpt_separator: <!-- more -->
 
 	shell> git diff <source_branch> <target_branch>
 	
-### 标签
+## 标签
 为软件发布创建标签是推荐的。这个概念早已存在，在 SVN 中也有。你可以执行如下命令创建一个叫做 1.0.0 的标签：
 	
 	shell> git tag 1.0.0 1b2e1d63ff
@@ -110,7 +110,7 @@ excerpt_separator: <!-- more -->
 
 你也可以使用少一点的提交 ID 前几位，只要它的指向具有唯一性。
 
-### 替换本地改动
+## 替换本地改动
 假如你操作失误（当然，这最好永远不要发生），你可以使用如下命令替换掉本地改动：
 
 	shell> git checkout -- <filename>
@@ -123,7 +123,7 @@ excerpt_separator: <!-- more -->
 	shell> git reset --hard origin/master
 
 
-### 实用小贴士
+## 实用小贴士
 内建的图形化 git：gitk
 彩色的 git 输出：
 

@@ -11,7 +11,7 @@ Run at version: kafka_2.11-1.0.1
 
 <!-- more -->
 
-### Topics:
+## Topics:
 
 List all topics:
 
@@ -20,7 +20,7 @@ List all topics:
     test_topic_2
     ...
 
-##### To delete specific topic:
+#### To delete specific topic:
 
 First, Add one line to `server.properties` file under config folder:
 
@@ -35,13 +35,13 @@ After delete, list all topic to check out is a good habit.
 
 Infomation from `kafka-topics.sh` is very limited, we will get more valuable info from `kafka-consumer-gropus.sh`.
 
-### Consumers:
+## Consumers:
 
-##### To list all consumer groups across all topics:
+### To list all consumer groups across all topics:
 
     bin/kafka-consumer-groups.sh --bootstrap-server broker1:9092 --list
 
-##### To view offsets for the consumer group:
+### To view offsets for the consumer group:
 
     ./bin/kafka-consumer-groups.sh --bootstrap-server localhost:9092 --describe --group count_errors
     GROUP           TOPIC    PARTITION   CURRENT-OFFSET   LOG-END-OFFSET   LAG   OWNER
@@ -53,7 +53,7 @@ Infomation from `kafka-topics.sh` is very limited, we will get more valuable inf
 
 By now, we can only see one group detail at a time, maybe a `--all-groups` option is better.
 
-##### To reset offsets:
+### To reset offsets:
 
     kafka-consumer-groups.bat --bootstrap-server kafka-host:9092 \
                               --group my-group --all-topics \
@@ -61,7 +61,7 @@ By now, we can only see one group detail at a time, maybe a `--all-groups` optio
 
 By default, `--reset-offsets` just prints the result of the operation. To actually perform the operation you need to add `--execute` to your command.
 
-#### Clear all data
+## Clear all data
 
 To delete manually:
 

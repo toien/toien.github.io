@@ -16,15 +16,15 @@ excerpt_separator: <!-- more -->
     [root@localhost ~]# cat /etc/centos-release
     CentOS Linux release 7.3.1611 (Core)
 
-### 1. 更新 yum 软件仓库
+## 1. 更新 yum 软件仓库
 
     > yum check-update
 
-### 2. 安装 samba 
+## 2. 安装 samba 
 
     > yum install samba
 
-### 3. 配置 samba，修改配置文件
+## 3. 配置 samba，修改配置文件
 
     > vim /etc/samba/smb.conf
 
@@ -54,15 +54,15 @@ excerpt_separator: <!-- more -->
         create mask = 0777      # 创建文件时默认的权限 
         directory mask = 0777   # 创建路径时默认的权限 
 
-### 4. 配置 centos 自动启动服务
+## 4. 配置 centos 自动启动服务
     
     > systemctl enable smb
     
-### 5. 检查配置是否成功
+## 5. 检查配置是否成功
 
     > systemctl is-enabled smb
 
-### 6. 通过 windows explorer 访问
+## 6. 通过 windows explorer 访问
     
 ![](/public/img/posts/windows-explorer-access-samba.png)
 
