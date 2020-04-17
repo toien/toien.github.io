@@ -12,6 +12,7 @@
     "gulp": "^3.9.1",
     "gulp-clean-css": "^2.0.7",
     "gulp-concat": "^2.6.0",
+    "gulp-hash-filename": "^3.0.0",
     "natives": "=1.1.6"
   },
   "engines": {
