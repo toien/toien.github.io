@@ -1,22 +1,11 @@
 ---
 layout: page
-title: 关于
+title: 关于 Kwritin
 ---
 
-### Kwritin
+**Kwritin**(Keep writing)，是我的技术博客。
 
-Welcome to `Keep writing`, this is my personal blog which powered by [jekyll](https://jekyllrb.com/) and [hyde](https://github.com/poole/hyde) theme.
+这里的大部分文章都在讨论 web 开发技术: java, python, linux, mq, elasticsearch, 爬虫, 前端等等。
 
-Here most posts are about tech stuff: java, python, debian, mq, elastic search, web crawler, front-end etc.
-
-- If post's content is wrong, plz [let me know](mailto:lshuhuan@yeah.net).
-- If posts infringe to your rights like copyright, plz [let me know](mailto:lshuhuan@yeah.net).
-- Also feel free if you want to [make a contact](mailto:lshuhuan@yeah.net).
-
-### Author
-
-A old year programmer climbing tech montain and don't want to be out-dated.
-
-A guy uses this blog write contents drive himself to learn and record things as memo. 
-
-Good good study, day day up.
+博主希望通过这种方式自驱学习，分享，进步。
+如果文中有任何错误，敬请斧正。
