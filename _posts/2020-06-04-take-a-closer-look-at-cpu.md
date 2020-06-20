@@ -233,7 +233,7 @@ node   0
 
 ### 分配方式
 
-通过 `numactl` 可以查看当前系统的 numa 信息，为进程分配 numa node。和 `taskset` `不一样，numactl` 不支持热修改，更新配置必须要重启进程。
+通过 `numactl` 可以查看当前系统的 numa 信息，为进程分配 numa node。和 `taskset` 不一样，`numactl` 不支持热修改，更新配置必须要重启进程。
 
 1. 每个进程（或线程）都会从父进程继承 NUMA 策略，并分配有一个优先 node。如果 NUMA 策略允许的话，进程可以调用其他node上的资源。
 2. NUMA 的 cpu 分配方式有: cpunodebind, physcpubind。
@@ -248,11 +248,13 @@ node   0
 因为 NUMA 默认的内存分配策略是 localalloc；它优先在进程所在 cpu 的本地内存中分配，会导致 cpu 节点之间内存分配不均衡。
 当某个 cpu 节点的内存不足时，会导致 swap/oom 产生，而不是从远程节点申请内存。
 
-而在一些比较重的服务(比如数据库)上使用 numa，如果姿势不对，容易会导致意 [异常](http://cenalulu.github.io/linux/numa/)。
+而在一些比较重的服务(比如数据库)上使用 numa，如果姿势不对，容易导致[异常](http://cenalulu.github.io/linux/numa/)。
+
+我们可以把一个 numa node 作为一个相对隔离的*逻辑硬件环境*，将服务绑定在上面运行；而这个服务对 cpu 和 内存的诉求，最好控制在 numa node 容量内。
 
 ### Examples
 
-评估好我们的应用对资源的使用情况，结合 numactl 提供的分配方式，才可以将应用以 numa node 的方式运行，期待性能上的提升。
+评估好我们的应用对资源的使用情况，结合 `numactl` 提供的分配方式，才可以将应用以 numa node 的方式运行，期待性能上的提升。
 
 ```
 # 将 myapplic 绑定在当前 node 中的 0-4# cpu，8-12# cpu 运行
