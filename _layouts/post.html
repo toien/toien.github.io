@@ -19,26 +19,13 @@ layout: default
 {% assign dq_url = site.url | append: page.url %}
 
 {% if page.comments != false %}
-<div id="disqus_thread"></div>
+<div id="disqus_thread" style="margin: .5rem 0;">Disqus is loading...</div>
 <script>
-  /**
-    * RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-    * LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
-    */
   var disqus_config = function () {
     this.page.url = '{{ dq_url }}';          // Replace PAGE_URL with your page's canonical URL variable
     this.page.identifier = '{{ page.url }}'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
   };
-  (function() {  // REQUIRED CONFIGURATION VARIABLE: EDIT THE SHORTNAME BELOW
-    var d = document, s = d.createElement('script');
-    
-    s.src = 'https://toien-github-pages.disqus.com/embed.js';  // IMPORTANT: Replace EXAMPLE with your forum shortname!
-    
-    s.setAttribute('data-timestamp', +new Date());
-    (d.head || d.body).appendChild(s);
-  })();
 </script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
 {% endif %}
 
 {% if site.related_posts %}

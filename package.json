@@ -5,7 +5,8 @@
   "author": "toien",
   "private": true,
   "scripts": {
-    "css": "gulp css"
+    "css": "gulp css",
+    "js": "gulp js"
   },
   "devDependencies": {
     "del": "^2.2.0",
@@ -13,6 +14,7 @@
     "gulp-clean-css": "^2.0.7",
     "gulp-concat": "^2.6.0",
     "gulp-hash-filename": "^3.0.0",
+    "gulp-uglify": "^3.0.2",
     "natives": "=1.1.6"
   },
   "engines": {
