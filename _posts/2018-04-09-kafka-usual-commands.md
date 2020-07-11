@@ -2,6 +2,7 @@
 layout: post
 title: Kafka usual commands
 tags: kafka
+last_modify_date: 2020-07-10
 excerpt_separator: <!-- more -->
 ---
 
@@ -11,16 +12,16 @@ Run at version: kafka_2.11-1.0.1
 
 <!-- more -->
 
-## Topics:
+# Topics:
 
-List all topics:
+## List all topics:
 
     # ./bin/kafka-topics.sh --list --zookeeper localhost:2181
     test_topic_1
     test_topic_2
     ...
 
-#### To delete specific topic:
+## Delete specific topic:
 
 First, Add one line to `server.properties` file under config folder:
 
@@ -35,13 +36,19 @@ After delete, list all topic to check out is a good habit.
 
 Infomation from `kafka-topics.sh` is very limited, we will get more valuable info from `kafka-consumer-gropus.sh`.
 
-## Consumers:
+Also make sure no more data produced of this topic before delete.
 
-### To list all consumer groups across all topics:
+## Check topic current offset:
+
+    ./bin/kafka-run-class.sh kafka.tools.GetOffsetShell --broker-list localhost:9092 --topic topic-name
+
+# Consumers:
+
+## List all consumer groups across all topics:
 
     bin/kafka-consumer-groups.sh --bootstrap-server broker1:9092 --list
 
-### To view offsets for the consumer group:
+## View offsets for the consumer group:
 
     ./bin/kafka-consumer-groups.sh --bootstrap-server localhost:9092 --describe --group count_errors
     GROUP           TOPIC    PARTITION   CURRENT-OFFSET   LOG-END-OFFSET   LAG   OWNER
@@ -53,7 +60,7 @@ Infomation from `kafka-topics.sh` is very limited, we will get more valuable inf
 
 By now, we can only see one group detail at a time, maybe a `--all-groups` option is better.
 
-### To reset offsets:
+## Reset consumer group offsets:
 
     kafka-consumer-groups.bat --bootstrap-server kafka-host:9092 \
                               --group my-group --all-topics \
@@ -61,12 +68,14 @@ By now, we can only see one group detail at a time, maybe a `--all-groups` optio
 
 By default, `--reset-offsets` just prints the result of the operation. To actually perform the operation you need to add `--execute` to your command.
 
-## Clear all data
+Note: reset consumer group's offset is done **only when group is inactive**.
+
+# Clear all data
 
 To delete manually:
 
 1. Shutdown the cluster
-2. Clean kafka log dir (specified by the `log.dir` attribute in kafka config file ) as well the 
+2. Clean kafka log dir (specified by the `log.dir` attribute in kafka config file) as well the 
    zookeeper data
 3. Restart the cluster
 
