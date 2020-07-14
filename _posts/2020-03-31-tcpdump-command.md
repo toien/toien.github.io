@@ -3,6 +3,7 @@ layout: post
 title: tcpdump 命令简介
 tags: tcpdump linux
 excerpt_separator: <!-- more -->
+last_modify_date: 2020-07-14
 ---
 
 联调接口是每个 Web 开发者必备技能，前端以 Chrome Developer Tools 为主，浏览器发出的请求都可以通过 Network 捕获。
@@ -34,8 +35,9 @@ tcpdump [ -c count ]
 
 各中含义如下：
 
-- `-i`: 指定网卡，比如 `-i eth0` 意味着抓取 eth0 网卡的流量
+- `-i`: 指定网卡，比如 `-i eth0` 意味着抓取 eth0 网卡的流量；如果没有指定，tcpdump 会检查网卡列表，找到状态为 `UP` 并且 "数字" 最小的那个网卡进行监听，比如 `eth0`，并排除 lo 网卡。
 - `-c`: 指定抓取封包数量，比如 `-c 100` 会在抓取到 100 个 packet 后停止
+- `-n`: 不进程地址反查，即不会将 ip 地址解析为主机名
 - `--number`: 打印网络封包的自增编号，这是 tcpdump 给每个 packet 生成的代表顺序的编号，而不是 tcp sequence 编号
 - `-Q`: 指定 packet 方向，in: 入网，out: 出网，inout: 两者都捕获
 - `-s`: 指定从每个 packet 中捕获的字节数，如果 `-s 0` 则捕获默认的 262144 字节
@@ -203,12 +205,12 @@ proto 修饰符描述 id 所属的协议. 可选的协议有: ether, fddi, tr, w
 
 ### 操作符:
 
-1. 否定操作 (`!' 或 `not')
-1. 与操作(`&&' 或 `and')
-1. 或操作(`||' 或 `or')
+1. 否定操作 (`!` 或 `not`)
+1. 与操作(`&&` 或 `and`)
+1. 或操作(`||` 或 `or`)
 
 否定操作符的优先级别最高. 与操作和或操作优先级别相同, 并且二者的结合顺序是从左到右. 
-要注意的是, 表达'与操作'时, 需要显式写出'and'操作符, 而不只是把前后表达元并列放置(nt: 二者中间的'and' 操作符不可省略).
+要注意的是, 表达 '与操作' 时, 需要显式写出 'and' 操作符, 而不只是把前后表达元并列放置(nt: 二者中间的 'and' 操作符不可省略).
 
 如果一个标识符前没有关键字, 则表达式的解析过程中最近用过的关键字(往往也是从左往右距离标识符最近的关键字)将被使用.
 
@@ -327,7 +329,7 @@ proto 修饰符描述 id 所属的协议. 可选的协议有: ether, fddi, tr, w
 
     如果数据包是以太网广播数据包, 则与此对应的条件表达式为真. ether 关键字是可选的.
 
-## 表达式进阶 - HTTP 示例
+## 表达式实战 - HTTP 示例
 
 1. To monitor HTTP traffic including request and response headers and message body:
 
@@ -355,11 +357,19 @@ tcpdump -A -s 0 'tcp port 80 and (((ip[2:2] - ((ip[0]&0xf)<<2)) - ((tcp[12]&0xf0
 tcpdump -i lo
     ```
 
+6. 如果这台机器上建立的连接非常之多，我们需要限定抓取 本机(192.168.1.200) 上，4000 端口的流量，可以:
+
+    ```
+tcpdump -A -s 0 -n '(src host 192.168.1.200 and port 4000) or (dst host 192.168.1.200 and dst port 4000)' 
+    ```
+
+7. 如果想抓取来自本机的 curl 请求的流量，则需要声明 `-i lo` 
+
 ## _REF
 
 - [Wireshark Charater Filter Generator](https://www.wireshark.org/tools/string-cf.html)
 - [Use TCPDUMP to Monitor HTTP Traffic](https://sites.google.com/site/jimmyxu101/testing/use-tcpdump-to-monitor-http-traffic)
 - [Linux tcpdump命令详解](https://www.cnblogs.com/ggjucheng/archive/2012/01/14/2322659.html)
+- [Tcpdump little book](https://www.bookstack.cn/read/tcpdump-little-book/README.md)
 
 `<<<EOF`
-
