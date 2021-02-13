@@ -32,7 +32,8 @@
  */
 
 html {
-  font-family: "Microsoft Yahei", "STHeiti Light", Helvetica, Arial, sans-serif;
+  font-family: "Noto Serif SC", "Microsoft Yahei", "Apple LiSung Light", serif;
+  text-underline-position: under;
 }
 
 @media (min-width: 58em) {
