@@ -7,7 +7,7 @@ excerpt_separator: <!-- more -->
 
 I am not a professional Ops, i don't usually install softwares on server, every time i doing this, i always spent time googling to resolve issues during installation, which becomes some tedious to me.
 
-In this post i will install nginx on debian from source. Trying to make installation portable as possible as i can, so i could copy executable nginx program to any another linux server, starting nginx instantly.
+In this post i will install nginx from source on debian. Trying to make installation portable, so i could copy executable nginx program to any another linux server, starting nginx instantly.
 
 Taking this post as a memo, next time, start Nginx quickly!
 

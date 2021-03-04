@@ -3,6 +3,7 @@ layout: post
 title: Spark 分区数量
 tags: spark
 excerpt_separator: <!-- more -->
+image: 2021-02-19-spark-number-of-partitions.assets/image-20210219234905032.png
 ---
 
 Spark 作为分布式数据处理框架，可以将大数据处理分散到众多廉价 pc 机上，并行执行。

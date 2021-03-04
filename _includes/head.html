@@ -6,22 +6,25 @@
   <!-- Enable responsiveness on mobile devices-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
 
+  <!-- OG tags -->
+  {% include og_tags.html %}
+
   <title>
-    {% if page.title == "首页" %}
+    {%- if page.title == "首页" -%}
       {{ site.title }} &middot; {{ site.tagline }}
-    {% else %}
+    {%- else -%}
       {{ page.title }} &middot; {{ site.title }}
-    {% endif %}
+    {%- endif -%}
   </title>
 
   <!-- CSS -->
-  {% if site.env == "production" %}
-    <link rel="stylesheet" href="/public/dist/style.92685.min.css">
-  {% else %}
-    <link rel="stylesheet" href="/public/css/poole.css">
-    <link rel="stylesheet" href="/public/css/hyde.css">
-    <link rel="stylesheet" href="/public/css/syntax.css">
-  {% endif %}
+  {% if site.env == "production" -%}
+  <link rel="stylesheet" href="/public/dist/style.92685.min.css">
+  {% else -%}
+  <link rel="stylesheet" href="/public/css/poole.css">
+  <link rel="stylesheet" href="/public/css/hyde.css">
+  <link rel="stylesheet" href="/public/css/syntax.css">
+  {% endif -%}
   <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Abril+Fatface|Noto+Serif+SC">
 
   <!-- Icons -->
