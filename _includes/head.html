@@ -6,7 +6,7 @@
   <!-- Enable responsiveness on mobile devices-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
 
-  <!-- SEO tags -->
+  {% comment %} SEO Tags {% endcomment -%}
   {% include seo_tags.html %}
   <title>
     {%- if page.title == "首页" -%}
@@ -18,7 +18,7 @@
 
   <!-- CSS -->
   {% if site.env == "production" -%}
-  <link rel="stylesheet" href="/public/dist/style.92685.min.css">
+  <link rel="stylesheet" href="/public/dist/style.76aef.min.css">
   {% else -%}
   <link rel="stylesheet" href="/public/css/poole.css">
   <link rel="stylesheet" href="/public/css/hyde.css">

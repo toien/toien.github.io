@@ -64,7 +64,7 @@ figure {
   padding: 2rem 1rem;
   color: rgba(0,51,51,0.6);
   /*background-color: #202020;*/
-  background-image: url(../img/left-bg-3.png);
+  background-image: url(../img/left-bg-3.webp);
   background-size: cover;
 }
 @media (min-width: 58em) {
@@ -75,7 +75,7 @@ figure {
     bottom: 0;
     width: 18rem;
     text-align: left;
-    background-image: url(../img/left-bg-3.png);
+    background-image: url(../img/left-bg-3.webp);
     background-size: cover;
   }
 }
