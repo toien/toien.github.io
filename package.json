@@ -9,7 +9,7 @@
     "js": "gulp js"
   },
   "devDependencies": {
-    "lodash": ">=4.17.19",
+    "lodash": ">=4.17.21",
     "lodash.template": ">=4.5.0",
     "del": "^2.2.0",
     "gulp": "^3.9.1",
