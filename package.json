@@ -13,7 +13,7 @@
     "lodash.template": ">=4.5.0",
     "del": "^2.2.0",
     "gulp": "^3.9.1",
-    "gulp-clean-css": "^2.0.7",
+    "gulp-clean-css": "4.3.0",
     "gulp-concat": "^2.6.0",
     "gulp-hash-filename": "^3.0.0",
     "gulp-uglify": "^3.0.2",
