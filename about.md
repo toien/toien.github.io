@@ -8,9 +8,10 @@ title: 关于 Kwritin
 这里的大部分文章都在讨论 web 开发技术: java, python, linux, mq, elasticsearch, 爬虫, 前端等等。
 
 博主希望通过这种方式自驱学习，分享，进步。
+
 如果文中有任何错误，敬请斧正。
 
-<a href="mailto:lshuhuan@yeah.net">lshuhuan@yeah.net</a>
+Email(BASE64): bHNodWh1YW5AeWVhaC5uZXQK
 
 {% assign dq_url = site.url | append: page.url %}
 
