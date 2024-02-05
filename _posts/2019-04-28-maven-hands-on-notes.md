@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Maven 实践笔记
+title: Maven 上手笔记
 tags: maven
 excerpt_separator: <!-- more -->
 ---
