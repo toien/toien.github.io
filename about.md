@@ -3,15 +3,14 @@ layout: page
 title: 关于 Kwritin
 ---
 
-**Kwritin**(Keep writing)，是我的技术博客。
+### Welcome! 
 
-这里的大部分文章都在讨论 web 开发技术: java, python, linux, mq, elasticsearch, 爬虫, 前端等等。
+**Kwritin**(Keep Writing) 是我的技术博客。
 
-博主希望通过这种方式自驱学习，分享，进步。
+我是一名有多年面向 google 和 stack overflow 编程的程序员。主要做服务端开发，数据工程。
+维护博客主要是为了学习、分享。
 
-如果文中有任何错误，敬请斧正。
-
-Email(BASE64): bHNodWh1YW5AeWVhaC5uZXQK
+欢迎各位大佬在评论区留言交流，或是电邮(base64): `bHNodWh1YW5AeWVhaC5uZXQK`。
 
 {% assign dq_url = site.url | append: page.url %}
 
