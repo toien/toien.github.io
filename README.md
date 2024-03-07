@@ -4,30 +4,39 @@ toien's personal blog repo.
 
 ## Run
 
-- Ruby 3.0 (Gem, Bundler)
-- Node v11 
+- Ruby 2.9.5 (RVM, Bundler, Refer:[GitHub Pages Dependency Versions](https://pages.github.com/versions/))
+- Node v11 (fnm)
 
-### Install
+## Install
 
-Install gemsets:
 ```shell
-> bundler install
-```
+rvm install 2.7.4
 
-for building native extentions, openssl requirement is needed, Refer: [This](https://stackoverflow.com/questions/30818391/gem-eventmachine-fatal-error-openssl-ssl-h-file-not-found)
+rvm use 2.7.4
+
+rvm gemset create gh_blog
+
+rvm use 2.7.4@gh_blog
+
+bundle install
+```
 
 Install node dependencies:
 
 ```shell
-> npm install
+npm install
 ```
+
+### Issues
+
+- rvm install failed: [Error running '__rvm_make -j16'](https://github.com/rvm/rvm/issues/5146#issuecomment-1020961695)
 
 ## Debug
 
-In `_config.yml`, change `env` property to "develop" 
+In `_config.yml`, change `env` property to `develop`
 
 ```shell
-> jekyll serve -D -w
+bundle exec jekyll serve -D -w
 ```
 
 ## Build (frontend)

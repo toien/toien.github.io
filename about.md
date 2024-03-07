@@ -7,14 +7,14 @@ title: 关于 Kwritin
 
 **Kwritin**(Keep Writing) 是我的技术博客。
 
-我是一名有多年面向 google 和 stack overflow 编程的程序员。主要做服务端开发，数据工程。
+我是一名从事服务端开发，数据工程相关的程序员。
 维护博客主要是为了学习、分享。
 
 欢迎各位大佬在评论区留言交流，或是电邮(base64): `bHNodWh1YW5AeWVhaC5uZXQK`。
 
 {% assign dq_url = site.url | append: page.url %}
 
-{% if page.comments != false %}
+{% if site.environment == "production" and page.commentable != false %}
 <div id="disqus_thread" style="margin: 2rem 0;">Disqus is loading...</div>
 <script>
   var disqus_config = function () {
