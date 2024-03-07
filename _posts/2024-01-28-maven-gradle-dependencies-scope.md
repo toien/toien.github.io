@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Maven & Gradle 依赖作用域
+title: Maven &amp; Gradle 依赖作用域
 tags: maven gradle
 excerpt_separator: <!-- more -->
 ---

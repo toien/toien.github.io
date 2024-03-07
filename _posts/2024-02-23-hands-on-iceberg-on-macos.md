@@ -1,11 +1,11 @@
 ---
 layout: post
-title: 在 macOS 上搭建 iceberg
+title: 在 macOS 上搭建 Iceberg
 tags: data-warehouse hadoop hive spark flink iceberg
 excerpt_separator: <!-- more -->
 ---
 
-眼过千遍，不如手过一遍。本文将描述如何在 macOS 上搭建 iceberg。
+眼过千遍，不如手过一遍。本文将描述如何在 macOS 上搭建 Iceberg。
 涉及到: Hadoop, Hive, Iceberg, Spark, Flink。
 
 <!-- more -->
