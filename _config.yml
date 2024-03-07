@@ -4,7 +4,7 @@ kramdown:
   input:          GFM
   math_engine:    mathjax
   syntax_highlighter: rouge
-highlighter:      rouge # 
+highlighter:      rouge
 
 # Build 
 exclude:          ["node_modules", "package.json", "gulpfile.js", "README.md", "LICENSE.md"]
@@ -25,7 +25,9 @@ author:
   url:            https://github.com/toien
 
 paginate:         6
-plugins:          ['jekyll-paginate']
+plugins:          
+  - 'jekyll-paginate'
+  - 'jekyll-sitemap'
 
 # Custom vars
 version:          0.0.1
