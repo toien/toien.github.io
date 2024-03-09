@@ -14,7 +14,7 @@ title: 关于 Kwritin
 
 {% assign dq_url = site.url | append: page.url %}
 
-{% if site.environment == "production" and page.commentable != false %}
+{% if site.env == "production" and page.commentable != false %}
 <div id="disqus_thread" style="margin: 2rem 0;">Disqus is loading...</div>
 <script>
   var disqus_config = function () {
