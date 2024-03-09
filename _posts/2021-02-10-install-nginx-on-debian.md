@@ -2,16 +2,17 @@
 layout: post
 title: Install Nginx from source on Debian (stretch)
 tags: nginx ops
-excerpt_separator: <!-- more -->
+lang: en_US
+last_modified: 2024-03-08
 ---
-
-I am not a professional Ops, i don't usually install softwares on server, every time i doing this, i always spent time googling to resolve issues during installation, which becomes some tedious to me.
 
 In this post i will install nginx from source on debian. Trying to make installation portable, so i could copy executable nginx program to any another linux server, starting nginx instantly.
 
 Taking this post as a memo, next time, start Nginx quickly!
 
 <!-- more -->
+
+I am not a professional Op, I don't usually install softwares on server, every time i doing this, i always spent time googling to resolve issues during installation, which becomes some tedious to me.
 
 I am using Debian 9(stretch), the linux server is an Aliyun ECS instance and Nginx version is 1.18.0.
 

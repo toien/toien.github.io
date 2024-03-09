@@ -3,7 +3,7 @@ layout: post
 title: tcpdump 命令简介
 tags: tcpdump linux
 excerpt_separator: <!-- more -->
-last_modify_date: 2020-07-14
+last_modified: 2020-07-14
 ---
 
 联调接口是每个 Web 开发者必备技能，前端以 Chrome Developer Tools 为主，浏览器发出的请求都可以通过 Network 捕获。

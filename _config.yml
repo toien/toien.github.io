@@ -19,15 +19,24 @@ title:            Kwritin
 tagline:          "A coder's blog"
 description:      "Good Good Study, Day Day Up."
 url:              https://toien.github.io
-# baseurl:          /
 author:
   name:           'toien.L'
   url:            https://github.com/toien
 
+
+defaults:
+  - scope:
+      path: "" # an empty string here means all files in the project
+    values:
+      lang:  zh_CN
+      image: /public/img/left-bg-3.webp
+      excerpt_separator: <!-- more -->
+
 paginate:         6
 plugins:          
-  - 'jekyll-paginate'
-  - 'jekyll-sitemap'
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-seo-tag
 
 # Custom vars
 version:          0.0.1

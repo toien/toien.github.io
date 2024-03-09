@@ -2,7 +2,7 @@
 layout: post
 title: Kafka usual commands
 tags: kafka
-last_modify_date: 2020-07-10
+last_modified: 2020-07-10
 excerpt_separator: <!-- more -->
 ---
 
