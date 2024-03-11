@@ -44,3 +44,11 @@ env:              production # develop
 
 github:           
   repo:           https://github.com/toien/toien.github.io
+
+webmaster_verifications:
+  indexnow: d59196332a36421787c92b4abcc964b8
+  bing: E9C017B7E5A7E5C8543C9B1CD04F0F82
+  # google: 1234
+  # alexa: 1234
+  # yandex: 1234
+  # baidu: 1234
