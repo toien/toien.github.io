@@ -74,6 +74,12 @@ tmp 目录会由于操作系统策略被不定期 **清空** ，导致 hdfs 出�
 
 所以建议将 3 个目录设置到 tmp 之外。
 
+### 初始化 namenode
+
+```shell
+hdfs namenode -format
+```
+
 ### 启动
 
 用 `sbin/start-dfs.sh` 启动 hdfs。用 `jps -l | grep hadoop` 查看进程是否启动: 
@@ -86,9 +92,9 @@ tmp 目录会由于操作系统策略被不定期 **清空** ，导致 hdfs 出�
 ### 测试
 
 ```shell
-> hadoop fs -mkdir -p /tmp
-> hadoop fs -put README.txt /tmp
-> hadoop fs -cat /tmp/README.txt
+hadoop fs -mkdir -p /tmp
+hadoop fs -put README.txt /tmp
+hadoop fs -cat /tmp/README.txt
 ```
 
 ## Hive
@@ -106,9 +112,9 @@ export HIVE_CONFIG_DIR=$HIVE_HOME/conf
 
 为 hive 表配置 hdfs 目录:
 ```shell
-> hadoop fs -chmod g+w   /tmp
-> hadoop fs -mkdir       /user/hive/warehouse
-> hadoop fs -chmod g+w   /user/hive/warehouse
+hadoop fs -chmod g+w /tmp
+hadoop fs -mkdir     /user/hive/warehouse
+hadoop fs -chmod g+w /user/hive/warehouse
 ```
 
 配置 hive, 在 conf 目录下增加 `hive-site.xml` 文件，增加如下配置: 
