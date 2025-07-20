@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Spark 分区数量
+title: 什么会影响 Spark 的分区数量
 tags: spark
 excerpt_separator: <!-- more -->
 image: 2021-02-19-spark-number-of-partitions.assets/image-20210219234905032.png
