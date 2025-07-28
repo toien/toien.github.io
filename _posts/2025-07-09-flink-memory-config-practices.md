@@ -215,7 +215,7 @@ INFO  [] -     JVM Overhead:       192.000mb (201326592 bytes)
 - OutOfMemoryError: Metaspace
 - IOException: Insufficient number of network buffers
 
-具体的解决途径参考: [内存常见问题(官方)]({{page.url}}#REFs) 
+具体的解决途径参考: [内存常见问题(官方)]({{page.url}}#refs) 
 
 ## Arthas
 
