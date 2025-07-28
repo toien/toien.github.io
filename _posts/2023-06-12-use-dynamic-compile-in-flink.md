@@ -168,7 +168,7 @@ public static void compile(String className, String source, String outputDir) {
 在实现的时候可以参考 github 上比较完善的实现:
 - [Java-Runtime-Compiler](https://github.com/OpenHFT/Java-Runtime-Compiler): 开箱即用的企业级动态编译器, 支持缓存，
 - [compiler](https://github.com/michaelliao/compiler): 编译过程在内存完成，仅支持 java6, 已停止维护。
-- [Janino](https://github.com/janino-compiler/janino): 早起 drools 使用的动态编译器，功能强大，api 抽象层次较低，上手难度大。
+- [Janino](https://github.com/janino-compiler/janino): drools 早期使用的动态编译器，功能强大，api 抽象层次较低，上手难度大。
 
 ## 在 Operator 实现
 
