@@ -239,11 +239,16 @@ jattach {JVM_PID} load instrument false /opt/arthas/arthas-agent.jar
 netstat -anlp
 ```
 
-最后启动 arthas-client.jar 连接 3658 进行调试。
-
 <p class="text-center">
   <img style="max-width: 600px" src="/public/img/posts/2025-07-09-flink-memory-config-practices/arthas-debug.png">
 </p>
+
+最后启动 arthas-client.jar 连接 3658 进行调试。
+
+```bash
+java -jar arthas-client.jar
+```
+
 
 ## REFs
 - [配置 Flink 进程的内存(官方)](https://nightlies.apache.org/flink/flink-docs-master/zh/docs/deployment/memory/mem_setup/)
